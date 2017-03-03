@@ -1,0 +1,22 @@
+body {
+    background-color:  #DDEEFF;
+    margin-left: 1em;
+}
+
+h1 {
+    color: #000066;
+    font-family: fantasy;
+    font-size: 24pt;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #006600;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    padding-left: 3em;
+}
+
+.long {
+    color: darkgray;
+}

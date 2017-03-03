@@ -1,0 +1,63 @@
+/* 2010036239 박성진 */
+#brand .fa-facebook {
+    color:#3b5998;
+}
+#brand .fa-twitter {
+    color:#55acee;
+}
+#brand .fa-google {
+    color : #dd4b39;
+}
+#brand .fa-pinterest{
+    color : #c8232c;
+}
+#brand .fa-instagram {
+    color :#3f729b;
+}
+#brand .fa-tumblr{
+    color : #34526f;
+}
+#search-wrap{
+    padding :0;
+    overflow: hidden;
+    float : none;
+    position: relative;
+}
+#search-wrap input{
+    border : none;
+    padding: 0.65em 0.75em;
+    font-size: 16px;
+    background-color: white;
+    width: 94%;
+    z-index: 1;
+}
+#search-wrap button {
+    border : none;
+    background-color: white;
+    top :3px;
+    right : 4px;
+    padding: 0.65em 0.75em;
+    position: absolute;
+    font-size: 13px;
+    z-index: 2;
+}
+body{
+    font-family: Brown, verdana,sans-serif;
+}
+
+header{
+    background-color: black;
+    color:white;
+    overflow: hidden;
+}
+.navigator div{
+    float:left;
+    cursor:pointer;
+    padding-top:11px;
+    padding-bottom:11px;
+    padding-right:30px;
+    text-align: center;
+}
+#festival{
+    color:#ff6567;
+}

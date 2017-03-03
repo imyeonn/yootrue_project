@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+  	<meta charset="utf-8" />
+    <title>CSE3026: Lab 11 - Song Search</title>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js" type="text/javascript"></script>
+    <script src="song_search.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+  	<h1>[CSE3026] Lab 11 - Song Search</h1>
+  	
+  	<hr />
+    <div>
+        
+        <label>Top Rank:
+			<select id="top" required="required">
+				<option value="3">3</option>
+				<option value="5">5</option>
+				<option value="7">7</option>
+				<option value="10">10</option>
+			</select>
+		</label>
+      	<button id="b_xml">List Songs (XML)</button>
+      	<button id="b_json">List Songs (JSON)</button>
+    </div>
+    
+    <div id="songarea">
+        <p>Top Ranked Songs:</p>
+      
+        <ol id="songs">
+            
+        </ol>
+    </div>
+  </body>
+</html>

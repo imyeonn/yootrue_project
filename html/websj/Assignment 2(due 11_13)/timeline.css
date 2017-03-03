@@ -1,0 +1,95 @@
+body>div {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+h1 {
+    display: inline-block;
+    color: black;
+}
+a {
+    color :#3B98FF;
+    text-decoration: none;
+}
+.search {
+    display: inline-block;
+    overflow: hidden;
+    margin: 15px 0 0px 426px;
+}
+.search input, select {
+    float: right;
+    margin-right: 10px;
+}
+select {
+    height: 31px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #555;
+    border-color: #ccc;
+    margin-right: 10px;
+}
+.panel {
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.panel-heading {
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;
+}
+.write-form>div{
+    top : 10px;
+    left : 160px;
+    right : 120px;
+    position: absolute;
+}
+.write-form>input[type="text"] {
+    width: 100px;
+}
+input[type="text"] {
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+.write-form>div input[type="text"] {
+    width: 100%;
+    position: absolute;
+}
+input[type="submit"] {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    float: right;
+    background-color: #337ab7;
+    border : 1px solid #2e6da4;
+    color : #fff;
+    font-size: 14px;
+}
+.tweet {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-bottom: 1px solid #ddd;
+}
+.tweet:last-child {
+    border-bottom-color: transparent;
+}
+.tweet-info>span:first-child {
+    font-weight: bold;
+}
+.tweet-info>span:last-child {
+    color:#8899a6;
+    font-size: 13px;
+}
+.tweet-content {
+    padding: 6px 12px;
+}
+.tweet input[type="submit"] {
+    margin-top: 5px;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}

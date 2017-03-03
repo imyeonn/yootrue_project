@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catch!</title>
+    <!-- provided files; do not modify -->
+    <link href="game.css" type="text/css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js" type="text/javascript"></script>
+    <!-- your JavaScript -->
+    <script src="game.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>The Amazing Mouse Memory Game</h1>
+    <h2 id="status">Click the green button to begin.</h2>
+
+
+    <div id="trigger">
+        <div id="start"></div>
+        <div id="stop"></div>
+    </div>
+
+    <div id="blocks">
+        <div data-index="0" class="block normal"></div>
+        <div data-index="1" class="block normal"></div>
+        <div data-index="2" class="block normal"></div>
+        <div data-index="3" class="block normal"></div>
+        <div data-index="4" class="block normal"></div>
+        <div data-index="5" class="block normal"></div>
+        <div data-index="6" class="block normal"></div>
+        <div data-index="7" class="block normal"></div>
+        <div data-index="8" class="block normal"></div>
+    </div>
+
+    <p>
+        State: <span id="state"></span>
+    </p>
+    <p>
+        Answer: <span id="answer"></span>
+    </p>
+
+</body>
+</html>

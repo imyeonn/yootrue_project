@@ -1,0 +1,126 @@
+h1, h2{
+    text-align: center;
+}
+
+p{
+    width: 600px;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#trigger{
+    width: 110px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#start{
+    background-color: #2fff0a;
+    width:48px;
+    height: 48px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-right: 10px;
+}
+
+#stop{
+    background-color: #ff0143;
+    width:48px;
+    height: 48px;
+    border: 1px solid black;
+    position:absolute;
+    top: 0px;
+    left: 60px;
+}
+
+.normal{
+    background-color: #eeeeee;
+}
+
+.target{
+    background-color: #ff0000;
+}
+
+.selected{
+    background-color: #2fff0a;
+}
+
+#blocks{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+
+div.block{
+    border: 1px solid black;
+    width:98px;
+    height: 98px;
+}
+
+.target{
+    background-color: #ff8484;
+}
+
+
+/*1st row*/
+#blocks div.block{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#blocks div.block + div.block{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+#blocks div.block + div.block + div.block{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+
+/*2nd row*/
+#blocks div.block + div.block + div.block + div.block{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+#blocks div.block + div.block + div.block + div.block + div.block{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#blocks div.block + div.block + div.block + div.block + div.block + div.block{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+/*3rd row*/
+#blocks div.block + div.block + div.block + div.block + div.block + div.block + div.block{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+}
+
+#blocks div.block + div.block + div.block + div.block + div.block + div.block + div.block + div.block{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+#blocks div.block + div.block + div.block + div.block + div.block + div.block + div.block + div.block + div.block{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
