@@ -11,7 +11,7 @@
 				<img src="images/home/u52.png" />
 				<div class="search">
 		            <!-- Ex 3: Modify forms -->
-		            <form class="search-form" action="index.html" method="get">
+		            <form class="search-form" action="search.php" method="get">
 		                <input type="text" name="query" placeholder="제품명검색">
 		                <input type="submit" value="search">
 		            </form>
@@ -36,44 +36,53 @@
 	                	include 'functions.php';
 	                	$functions=new Functions();
 	                	$query=$_GET['query'];
-
 	                	
 	                	$arrays=$functions->searchProducts($query);
-	                	var_dump($arrays);
-	                	for($j = 0 ; $j < 5 ; ++$j){
-
-							$temp = mysql_result($result, $j, 't2'); 
-
-							print("$temp <br>"); 
-
-						}
-
+	                	//var_dump($arrays);
 	                	foreach($arrays as $array){
-	                		$productnames=$array[0];
-	                		$productname=$productnames[0];
-	                		$counts=$array[1];
-	                		$count=$counts[0];
-	                		$videos=$array[2];
-	                		$thumbnails=$array[3];
-	                		$thumbnail=$thumbnails[0];
+	                		$productinfo = $array[0];
+	                		$productnames = $productinfo[0];
+	                		$productname = $productnames[0];
+	                		$productimage = $productnames[1];
+	                		$counts = $array[1];
+	                		$count = $counts[0];
+
 	                		?>
-	                		<img src=<?=$thumbnail?> alt="product image"/>
+	                		<img src=<?=$productimage?> alt="product image"/>
 	                		<p><?=$productname?></p>
 	                		<p>
 	                			<span><?="$count"?>회 등장</span>
 	                			<span>등장 영상 보기</span>
 	                		</p>
-	                		<?
+	                		<?php
+	                		
+	                		$videosss = $array[2];
+	                		//print $videossss;
+	                		//print '<br>';
+	                		$videoss = $videosss[0];
+	                		//print $videosss;
+	                		//print '<br>';
+	                		$videos = $videoss[0];
+	                		
 	                		foreach($videos as $video){
-	                			$title=$video[0];
+		                		//$videos=$array[2];
+		                		//$videos = $videoss[0];
+		                		//$video = $videos[0];//videos : 제목
+		                		$title=$video[0];
 	                			$link=$video[1];
 	                			?>
 	                			<p>
-	                				<a href="<?=$link?>"><?=$title?> </a>
+	                				<a href=<?=$link?>><?=$title?> </a>
 	                			</p>
 
 	                			<?php
 	                		}
+	                		
+	                		//$thumbnail=$thumbnails[0];
+	                		
+	                			
+	                			
+	                		
 	                	}
 	                ?>
 	                               
