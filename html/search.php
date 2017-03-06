@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>카테고리</title>
 		<link rel="stylesheet" href="search.css">
 	</head>
@@ -36,7 +36,7 @@
 	                	include 'functions.php';
 	                	$functions=new Functions();
 	                	$query=$_GET['query'];
-	                	
+
 	                	$arrays=$functions->searchProducts($query);
 	                	//var_dump($arrays);
 	                	foreach($arrays as $array){
@@ -55,7 +55,7 @@
 	                			<span>등장 영상 보기</span>
 	                		</p>
 	                		<?php
-	                		
+
 	                		$videosss = $array[2];
 	                		//print $videossss;
 	                		//print '<br>';
@@ -63,7 +63,7 @@
 	                		//print $videosss;
 	                		//print '<br>';
 	                		$videos = $videoss[0];
-	                		
+
 	                		foreach($videos as $video){
 		                		//$videos=$array[2];
 		                		//$videos = $videoss[0];
@@ -77,15 +77,15 @@
 
 	                			<?php
 	                		}
-	                		
+
 	                		//$thumbnail=$thumbnails[0];
-	                		
-	                			
-	                			
-	                		
+
+
+
+
 	                	}
 	                ?>
-	                               
+
 	            </div>
 			</article>
 		</div>
