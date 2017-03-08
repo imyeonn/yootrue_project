@@ -12,12 +12,17 @@
 
 }
 
+#header .search-form {
+
+}
+
 #header .profile img{
+  margin-left: 4rem;
   border-radius: 100%;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 #header .profile div{
@@ -47,6 +52,9 @@
 
 #header ul.link li:hover{
   border-bottom: 2px solid #ff006c;
+  a{
+    color:#ff006c;
+  }
 }
 
 #header ul.link li a:hover{
