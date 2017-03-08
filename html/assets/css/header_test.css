@@ -222,3 +222,13 @@ body{
   display: block;
   text-align: center;
   color:#d3d6db;
+  font-weight: 200;
+  padding-bottom: 3rem;
+  font-size: 0.8rem;
+}
+
+#footer a{
+  display: block;
+  color:#d3d6db;
+  text-decoration: none;
+}
