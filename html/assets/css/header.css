@@ -8,6 +8,7 @@
   display: inline-flex;
   width: 100%;
   height: 10rem;
+  float: center;
 
 }
 
@@ -21,6 +22,7 @@
 
 #header .profile div{
   padding-left: 3rem;
+  padding-top: 2rem;
 }
 
 #header ul.link li{
@@ -28,24 +30,26 @@
   padding: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 6rem;
+  width: 8rem;
   height: 2rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  float: left;
+  float: center;
   cursor: pointer;
+}
+
+#header ul.link li a{
+  color:rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 }
 
 #header ul.link li:hover{
   border-bottom: 2px solid #ff006c;
-  color: #ff006c;
 }
 
-#header ul.link li a{
-  color:rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-
+#header ul.link li a:hover{
+  color:#ff006c;
 }
 
 #main .thumbnails{
@@ -81,13 +85,13 @@
 }
 #footer{
   text-align: center;
-  color:rgba(255, 255, 255, 0.5);
+  color:#d3d6db;
   font-weight: 200;
   padding-bottom: 3rem;
   font-size: 0.8rem;
 }
 #footer a{
-  color:rgba(255, 255, 255, 0.5);
+  color:#d3d6db;
   text-decoration: none;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
   margin-bottom: 3rem;
