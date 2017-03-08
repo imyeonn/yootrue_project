@@ -46,7 +46,7 @@
 	          $count = $counts[0];
      			?>
 					<div class="productbox">
-						<img src=<?=$productimage?> alt="product image"/>
+						<span class="imagebox"><img src=<?=$productimage?> alt="product image"/></span>
 						<div class="namename">
 							<h2><?=$productname?></h2>
 	            <ul>

@@ -76,8 +76,7 @@ body{
 
 #header ul.link li:hover{
   border-bottom: 2px solid #ff006c;
-  a{
-    color:#ff006c;
+  color:#ff006c;
   }
 }
 
@@ -103,13 +102,23 @@ body{
   margin: 0.5rem;
   margin-left: 1rem;
 }
-#searchresult>div.productbox >img{
+#searchresult>div.productbox>span.imagebox>img{
   display: inline-block;
   float: left;
   height: 4.5rem;
   weight: 4.5rem;
+
+}
+
+#searchresult>div.productbox> span.imagebox{
+  display:inline-block;
+  float: left;
+  weight: 4.5rem;
+  height: 4.5rem;
+  padding: inherit;
   margin: 0.5rem;
   margin-left: 1rem;
+  border: 1px solid black;
 }
 
 #searchresult>div.productbox{
