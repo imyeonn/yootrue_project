@@ -10,64 +10,57 @@
 	<body>
 		<div id="wrapper">
 			<header id="header">
+				<!-- 프로필사진 -->
 				<span class="profile">
 					<img src="images/profile.jpg" alt="{{ site.url  }}/category" />
 					<!-- 검색창 -->
 					<div class="search">
-						<!-- Ex 3: Modify forms -->
 						<form class="search-form" action="search.php" method="get">
 							<input type="text" name="query" placeholder="제품을 검색하세요!">
 							<input type="submit" value="search">
 						</form>
 					</div>
 				</span>
-
-
+				<!-- 카테고리/플레이리스트 분류 -->
 				<ul class="link">
 					<li><a href="{{ site.url }}/category" class="category"><span class="label">카테고리</span></a></li>
 					<li><a href="{{ site.url }}/playlist" class="playlist"><span class="label">플레이리스트</span></a></li>
 				</ul>
 			</header>
 
-		</div>
-
-
-			<!-- 여기부터 수정함 -->
+			<!-- 검색결과 표시 -->
 			<article id="searchresult">
-
+					<!-- 제품리스트 출력 -->
 					<?php
-	                	include 'functions.php';
-	                	$functions=new Functions();
-	                	$query=$_GET['query'];
+						include 'functions.php';
+						$functions=new Functions();
+	          $query=$_GET['query'];
+      			$arrays=$functions->searchProducts($query);
+	        	//var_dump($arrays);
+         		foreach($arrays as $array){
+	          $productinfo = $array[0];
+	          $productnames = $productinfo[0];
+	          $productname = $productnames[0];
+	          $productimage = $productnames[1];
+	          $counts = $array[1];
+	          $count = $counts[0];
+     			?>
+					<div class="productbox">
+						<img src=<?=$productimage?> alt="product image"/>
+						<div class="namename">
+							<h2><?=$productname?></h2>
+	            <ul>
+								<li id="count"><span><?="$count"?>회 등장</span></li>
+	              <li id="video"><span>등장 영상 보기</span></li>
+	            </ul>
+						</div>
 
-	                	$arrays=$functions->searchProducts($query);
-	                	//var_dump($arrays);
-	                	foreach($arrays as $array){
-	                		$productinfo = $array[0];
-	                		$productnames = $productinfo[0];
-	                		$productname = $productnames[0];
-	                		$productimage = $productnames[1];
-	                		$counts = $array[1];
-	                		$count = $counts[0];
-
-	                		?>
-											<div class="image">
-	                			<img src=<?=$productimage?> alt="product image"/>
-												<div class="namename">
-
-
-	                			<h2><?=$productname?></h2>
-	                			<ul id=prolist>
-	                			<li id="count"><span><?="$count"?>회 등장</span></li>
-	                			<li id="video"><span>등장 영상 보기</span></li>
-	                		</ul>
-											</div>
-	                		<?php
-
-	                		$videosss = $array[2];
-	                		//print $videossss;
-	                		//print '<br>';
-	                		$videoss = $videosss[0];
+						<!-- 제품별 등장영상 출력 -->
+						<?php
+							$videosss = $array[2];
+	            //print $videossss;
+	            //print '<br>';
+	            $videoss = $videosss[0];
 	                		//print $videosss;
 	                		//print '<br>';
 	                		$videos = $videoss[0];
@@ -112,6 +105,6 @@
 				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기로!</span></a>
 				<p>&copy; Hyeyeon. All rights reserved.</p>
 			</footer>
-
+		</div>
 	</body>
 </html>

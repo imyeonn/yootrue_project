@@ -103,7 +103,7 @@ body{
   margin: 0.5rem;
   margin-left: 1rem;
 }
-#searchresult>div.image >img{
+#searchresult>div.productbox >img{
   display: inline-block;
   float: left;
   height: 4.5rem;
@@ -112,14 +112,14 @@ body{
   margin-left: 1rem;
 }
 
-#searchresult>div.image{
+#searchresult>div.productbox{
   display: block;
   margin-left: 0.5rem;
   margin-bottom: 1rem;
   float: center;
 }
 
-#searchresult>div.image>div.namename h2{
+#searchresult>div.productbox>div.namename h2{
   font-size: 1.1rem;
   color:rgba(0, 0, 0, 0.8);
   font-weight: 600;
