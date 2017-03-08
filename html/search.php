@@ -65,8 +65,8 @@
 	            //print '<br>';
 	            $videos = $videoss[0];
 						?>
-						<div>
-							<ul>
+						<div id="videolist">
+							<ul class="icons">
 								<?php
 									foreach($videos as $video){
 		              	//$videos=$array[2];
@@ -76,7 +76,7 @@
 	                	$link=$video[1];
 	              ?>
 
-	              <li><span id="listlist"><a href=<?=$link?>><?=$title?></a></span></li>
+	              <li><a href=<?=$link?>><span id="listlist"><?=$title?></span></a></li>
 									<?php
 	                	}
 									?>

@@ -1,11 +1,11 @@
 ul {
   padding-left: 0;
   margin: 0;
-  text-decoration: none;
 }
 
 li {
-  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
 }
 
 body{
@@ -127,17 +127,28 @@ body{
   margin-top: 0.8rem;
   margin-bottom: 0rem;
   display: inline-block;
-
 }
 
-#searchresult>div>ul{
-  clear : both;
+#searchresult>div.productbox>div.namename ul{
+  margin-bottom: 0.5rem;
+}
+
+#videolist>ul.icons>li>a{
   text-decoration: none;
+  color:rgba(0, 0, 0, 0.7);
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  width: 20rem;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-#listlist{
-  text-decoration: none;
+#videolist>ul.icons>li>a:hover{
+    color:#ff006c;
 }
+
 
 #count{
   display: inline-block;
@@ -170,6 +181,7 @@ body{
   font-weight: 500;
   line-height: 2rem;
   background-color: #ff006c;
+  border: 0.1px solid #ff006c;
   border-radius: 0.2rem;
 }
 
