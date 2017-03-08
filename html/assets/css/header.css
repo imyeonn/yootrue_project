@@ -37,6 +37,7 @@
   align-items: center;
   float: center;
   cursor: pointer;
+
 }
 
 #header ul.link li a{
@@ -56,29 +57,59 @@
 
 /*추가*/
 
-#searchresult > div img{
+#searchresult>img{
+  display: inline-block;
+  float: left;
   height: 5rem;
   weight: 5rem;
+  margin: 0.5rem;
 }
 
-#searchresult h2{
+#searchresult>div{
+  display: inline-block;
+  float: left;
+}
+
+#searchresult>div h2{
   font-size: 1.2rem;
   color:rgba(0, 0, 0, 0.8);
-  font-weight: 200;
-  margin-bottom: 1.5rem;
+  font-weight: 600;
   line-height: 2rem;
 }
 
 #count{
-  font-size: 0.8rem;
-  color:rgba(255, 255, 255, 0.9);
-  font-weight: 200;
-  line-height: 2rem;
+  display: inline-block;
+  padding: 0.2rem;
+  width: 5rem;
+  height: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
+  font-size: 0.8rem;
+  color:rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  line-height: 2rem;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
 }
 
+#video{
+  display: inline-block;
+  padding: 0.2rem;
+  width: 8rem;
+  height: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-
+  font-size: 0.8rem;
+  color:rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  line-height: 2rem;
+  background-color: #ff006c;
+  border-radius: 0.2rem;
+}
 
 #footer{
   text-align: center;
@@ -90,18 +121,5 @@
 #footer a{
   color:#d3d6db;
   text-decoration: none;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
   margin-bottom: 3rem;
-}
-#footer:before{
-  content:'';
-  display: block;
-  margin:2rem auto;
-  width: 10rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-@media(max-width:480px) {
-  #main .thumbnails{
-    display: block;
-  }
 }
