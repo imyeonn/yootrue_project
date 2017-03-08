@@ -59,7 +59,7 @@ body{
   padding: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 9rem;
+  width: 11rem;
   height: 2rem;
   display: inline-flex;
   justify-content: center;
@@ -127,10 +127,18 @@ body{
   margin-top: 0.8rem;
   margin-bottom: 0rem;
   display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 19rem;
 }
 
 #searchresult>div.productbox>div.namename ul{
   margin-bottom: 0.5rem;
+}
+
+#videolist>ul.icons{
+  display: inline-block;
 }
 
 #videolist>ul.icons>li>a{
@@ -143,6 +151,8 @@ body{
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  display: inline-flex;
+
 }
 
 #videolist>ul.icons>li>a:hover{
@@ -170,7 +180,7 @@ body{
 #video{
   display: inline-block;
   padding: 0.2rem;
-  width: 10rem;
+  width: 13.5rem;
   height: 1rem;
   display: inline-flex;
   justify-content: center;
