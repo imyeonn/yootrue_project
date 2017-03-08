@@ -77,7 +77,6 @@ body{
 #header ul.link li:hover{
   border-bottom: 2px solid #ff006c;
   color:#ff006c;
-  }
 }
 
 #header ul.link li a:hover{
@@ -110,15 +109,15 @@ body{
 
 }
 
+/*이미지 박스 만들어서 이미지칸 고정*/
 #searchresult>div.productbox> span.imagebox{
   display:inline-block;
   float: left;
   weight: 4.5rem;
   height: 4.5rem;
-  padding: inherit;
   margin: 0.5rem;
   margin-left: 1rem;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 #searchresult>div.productbox{
