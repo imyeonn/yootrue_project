@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>카테고리</title>
-		<link rel="stylesheet" href="search.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/header_test.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
