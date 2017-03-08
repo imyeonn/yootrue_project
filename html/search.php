@@ -61,44 +61,35 @@
 	            //print $videossss;
 	            //print '<br>';
 	            $videoss = $videosss[0];
-	                		//print $videosss;
-	                		//print '<br>';
-	                		$videos = $videoss[0];
-											?>
-											<div>
-											<ul>
-											<?php
-	                		foreach($videos as $video){
-		                		//$videos=$array[2];
-		                		//$videos = $videoss[0];
-		                		//$video = $videos[0];//videos : 제목
-		                		$title=$video[0];
-	                			$link=$video[1];
-	                			?>
+	            //print $videosss;
+	            //print '<br>';
+	            $videos = $videoss[0];
+						?>
+						<div>
+							<ul>
+								<?php
+									foreach($videos as $video){
+		              	//$videos=$array[2];
+		                //$videos = $videoss[0];
+		                //$video = $videos[0];//videos : 제목
+		                $title=$video[0];
+	                	$link=$video[1];
+	              ?>
 
-	                				<li><span id="listlist">
-														<a href=<?=$link?>><?=$title?></a>
-													</span></li>
-
-
-	                			<?php
-	                		}
-											?>
-
-											</ul>
-											</div>
-											<?php
-	                		//$thumbnail=$thumbnails[0];
-
-
-											?>
-
-										</div>
-												<?php
+	              <li><span id="listlist"><a href=<?=$link?>><?=$title?></a></span></li>
+									<?php
 	                	}
-	                ?>
+									?>
+						  </ul>
+						</div>
 
-
+						<?php
+							//$thumbnail=$thumbnails[0];
+						?>
+					</div>
+				<?php
+	       	}
+	      ?>
 			</article>
 
 			<footer id="footer">
