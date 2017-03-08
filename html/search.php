@@ -4,32 +4,32 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>카테고리</title>
 		<link rel="stylesheet" href="search.css">
+		<link rel="stylesheet" href="assets/css/header_test.css" />
+		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
 	<body>
-		<div>
-			<div>
-				<img src="images/home/u52.png" />
-				<div class="search">
-		            <!-- Ex 3: Modify forms -->
-		            <form class="search-form" action="search.php" method="get">
-		                <input type="text" name="query" placeholder="제품명검색">
-		                <input type="submit" value="search">
-		            </form>
-		        </div>
-			</div>
+		<div id="wrapper">
+			<header id="header">
+				<span class="profile">
+					<img src="images/profile.jpg" alt="{{ site.url  }}/category" />
+					<!-- 검색창 -->
+					<div class="search">
+						<!-- Ex 3: Modify forms -->
+						<form class="search-form" action="index.html" method="get">
+							<input type="text" name="query" placeholder="제품을 검색하세요!">
+							<input type="submit" value="search">
+						</form>
+					</div>
+				</span>
 
-			<div style = "clear : both">
-				<div >
-					<p>카테고리</p>
-				</div>
-				<div >
-					<p>플레이리스트</p>
-				</div>
 
-			</div>
-			<div style = "clear : both">
+				<ul class="link">
+					<li><a href="{{ site.url }}/category" class="category"><span class="label">카테고리</span></a></li>
+					<li><a href="{{ site.url }}/playlist" class="playlist"><span class="label">플레이리스트</span></a></li>
+				</ul>
+			</header>
 
-			</div>
+		</div>
 
 
 			<!-- 여기부터 수정함 -->
@@ -53,10 +53,10 @@
 	                		?>
 	                		<img src=<?=$productimage?> alt="product image"/>
 	                		<h2><?=$productname?></h2>
-	                		<p>
-	                			<span id="count"><?="$count"?>회 등장</span>
-	                			<span id="video">등장 영상 보기</span>
-	                		</p>
+	                		<ul id=prolist>
+	                			<li id="count"><span><?="$count"?>회 등장</span></li>
+	                			<li id="video"><span>등장 영상 보기</span></li>
+	                		</ul>
 	                		<?php
 
 	                		$videosss = $array[2];
@@ -74,11 +74,11 @@
 		                		$title=$video[0];
 	                			$link=$video[1];
 	                			?>
-	                			<p>
-	                				<span id="list">
+	                			<ul>
+	                				<li><span class="list">
 														<a href=<?=$link?>><?=$title?></a>
-													</span>
-	                			</p>
+													</span></li>
+	                			</ul>
 
 	                			<?php
 	                		}

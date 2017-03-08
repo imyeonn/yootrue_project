@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>beautu</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/header.css" />
+		<link rel="stylesheet" href="assets/css/header_test.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
 	<body>
@@ -24,17 +24,19 @@
 					</form>
 				</div>
 			</span>
+
+		<!-- 목룍 -->
+			<ul class="link">
+				<li><a href="{{ site.url }}/category" class="category"><span class="label">카테고리</span></a></li>
+				<li><a href="{{ site.url }}/playlist" class="playlist"><span class="label">플레이리스트</span></a></li>
+			</ul>
 		</header>
 
-		<div id="capl">
-			<div><a href="{{ site.url }}/category" class="category">카테고리</span></a></div>
-			<div><a href="{{ site.url }}/playlist" class="playlist">플레이리스트</span></a></div>
+	<!-- {% if page.title == "category" %}
+	{% include category.html %}
+	{% else %} -->
 
-				<!-- <li><a href="{{ site.url }}/playlist" class="playlist"><span class="label">플레이리스트</span></a></li> -->
-		</div>
-
-
-		<section id="searchresult">
+		<article id="searchresult">
 			<img src="http://shopping.phinf.naver.net/main_4057786/4057786331.20130130180342.jpg?type=f300">
 			<div>
 				<h2>제품 이름 자리</h2>
@@ -43,7 +45,7 @@
 					<li id="video"><span>등장 영상 보기</span></li>
 				</ul>
 			</div>
-		</section>
+		</article>
 
 		<article id="playlist">
 			<img src="https://i.ytimg.com/vi/NEVltC5BgsA/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=GaB81LnJVjYPno0o0Wi8_7gfWa0">
@@ -57,11 +59,10 @@
 		</article>
 
 
-
-		<footer id="footer">
+		<!-- <footer id="footer">
 			<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기로!</span></a>
 			<p>&copy; Hyeyeon. All rights reserved.</p>
-		</footer>
+		</footer> -->
 
 	</div>
 	</body>
