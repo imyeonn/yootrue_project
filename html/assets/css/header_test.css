@@ -1,6 +1,11 @@
 ul {
   padding-left: 0;
   margin: 0;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
 }
 
 body{
@@ -46,6 +51,7 @@ body{
   padding-left: 3rem;
   padding-top: 2rem;
 }
+
 
 
 #header ul.link li{
@@ -97,20 +103,40 @@ body{
   margin: 0.5rem;
   margin-left: 1rem;
 }
-
-#searchresult>div{
+#searchresult>div.image >img{
   display: inline-block;
   float: left;
-  margin-left: 0.5rem;
+  height: 4.5rem;
+  weight: 4.5rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
 }
 
-#searchresult>div h2{
+#searchresult>div.image{
+  display: block;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  float: center;
+}
+
+#searchresult>div.image>div.namename h2{
   font-size: 1.1rem;
   color:rgba(0, 0, 0, 0.8);
   font-weight: 600;
   line-height: 2.3rem;
   margin-top: 0.8rem;
   margin-bottom: 0rem;
+  display: inline-block;
+
+}
+
+#searchresult>div>ul{
+  clear : both;
+  text-decoration: none;
+}
+
+#listlist{
+  text-decoration: none;
 }
 
 #count{

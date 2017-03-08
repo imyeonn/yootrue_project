@@ -15,7 +15,7 @@
 					<!-- 검색창 -->
 					<div class="search">
 						<!-- Ex 3: Modify forms -->
-						<form class="search-form" action="index.html" method="get">
+						<form class="search-form" action="search.php" method="get">
 							<input type="text" name="query" placeholder="제품을 검색하세요!">
 							<input type="submit" value="search">
 						</form>
@@ -34,7 +34,7 @@
 
 			<!-- 여기부터 수정함 -->
 			<article id="searchresult">
-				<div>
+
 					<?php
 	                	include 'functions.php';
 	                	$functions=new Functions();
@@ -51,12 +51,17 @@
 	                		$count = $counts[0];
 
 	                		?>
-	                		<img src=<?=$productimage?> alt="product image"/>
-	                		<h2><?=$productname?></h2>
-	                		<ul id=prolist>
+											<div class="image">
+	                			<img src=<?=$productimage?> alt="product image"/>
+												<div class="namename">
+
+
+	                			<h2><?=$productname?></h2>
+	                			<ul id=prolist>
 	                			<li id="count"><span><?="$count"?>회 등장</span></li>
 	                			<li id="video"><span>등장 영상 보기</span></li>
 	                		</ul>
+											</div>
 	                		<?php
 
 	                		$videosss = $array[2];
@@ -66,7 +71,10 @@
 	                		//print $videosss;
 	                		//print '<br>';
 	                		$videos = $videoss[0];
-
+											?>
+											<div>
+											<ul>
+											<?php
 	                		foreach($videos as $video){
 		                		//$videos=$array[2];
 		                		//$videos = $videoss[0];
@@ -74,24 +82,30 @@
 		                		$title=$video[0];
 	                			$link=$video[1];
 	                			?>
-	                			<ul>
-	                				<li><span class="list">
+
+	                				<li><span id="listlist">
 														<a href=<?=$link?>><?=$title?></a>
 													</span></li>
-	                			</ul>
+
 
 	                			<?php
 	                		}
+											?>
 
+											</ul>
+											</div>
+											<?php
 	                		//$thumbnail=$thumbnails[0];
 
 
+											?>
 
-
+										</div>
+												<?php
 	                	}
 	                ?>
 
-	            </div>
+
 			</article>
 		</div>
 
