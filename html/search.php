@@ -30,7 +30,10 @@
 			<div style = "clear : both">
 
 			</div>
-			<article>
+
+
+			<!-- 여기부터 수정함 -->
+			<article id="searchresult">
 				<div>
 					<?php
 	                	include 'functions.php';
@@ -49,10 +52,10 @@
 
 	                		?>
 	                		<img src=<?=$productimage?> alt="product image"/>
-	                		<p><?=$productname?></p>
+	                		<h2><?=$productname?></h2>
 	                		<p>
-	                			<span><?="$count"?>회 등장</span>
-	                			<span>등장 영상 보기</span>
+	                			<span id="count"><?="$count"?>회 등장</span>
+	                			<span id="video">등장 영상 보기</span>
 	                		</p>
 	                		<?php
 
@@ -72,7 +75,9 @@
 	                			$link=$video[1];
 	                			?>
 	                			<p>
-	                				<a href=<?=$link?>><?=$title?> </a>
+	                				<span id="list">
+														<a href=<?=$link?>><?=$title?></a>
+													</span>
 	                			</p>
 
 	                			<?php

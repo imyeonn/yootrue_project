@@ -52,37 +52,34 @@
   color:#ff006c;
 }
 
-#main .thumbnails{
-  display: flex;
+
+
+/*추가*/
+
+#searchresult > div img{
+  height: 5rem;
+  weight: 5rem;
 }
-#main .thumbnails>div{
-  flex-grow: 1;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-}
-#main .thumbnails img{
-  width: 100%;
-  border-top-left-radius: 0.2rem;
-  border-top-right-radius: 0.2rem;
-  display: block;
-}
-#main .thumbnails a{
-  margin-bottom: 1.5rem;
-  display: block;
-}
-#main .thumbnails h3{
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom-left-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
-  padding: 1rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  font-size: 0.8rem;
+
+#searchresult h2{
+  font-size: 1.2rem;
+  color:rgba(0, 0, 0, 0.8);
   font-weight: 200;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
 }
+
+#count{
+  font-size: 0.8rem;
+  color:rgba(255, 255, 255, 0.9);
+  font-weight: 200;
+  line-height: 2rem;
+
+}
+
+
+
+
 #footer{
   text-align: center;
   color:#d3d6db;

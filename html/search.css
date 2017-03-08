@@ -1,14 +1,31 @@
+/*추가*/
+
+#searchresult > div img{
+  height: 5rem;
+  weight: 5rem;
+}
+
+#searchresult h2{
+  font-size: 1.2rem;
+  color:rgba(0, 0, 0, 0.8);
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+}
+
+#count{
+  font-size: 0.8rem;
+  color:rgba(255, 255, 255, 0.9);
+  font-weight: 200;
+  line-height: 2rem;
+
+}
 
 
 
 
 
-
-
-
-
-
-
+/*기존*/
 body{
     font-family: Brown, verdana,sans-serif;
     margin:0px;
@@ -19,4 +36,3 @@ body > div, header > div{
     max-width: 1024px;
     margin: 0 auto;
 }
-
