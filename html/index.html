@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>카테고리</title>
+		<meta charset="utf-8">
+		<title>beautu</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/header.css" />
+		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
 	<body>
-		<div>
-			<img src="images/home/u52.png" style ="float:left"/>
-			<div class="search">
-                <!-- Ex 3: Modify forms -->
-                <form class="search-form" action="index.html" method="get">
-                    <input type="text" name="query" placeholder="제품명검색">
-                    <input type="submit" value="search">
-                </form>
-            </div>
-		</div>
-		<div style = "clear : both">
-			<div >
-				<p>카테고리</p>
-			</div>
-			<div >
-				<p>플레이리스트</p>
-			</div>
 
-		</div>
-		<div style = "clear : both">
+		<!-- 유튜버 프로필사진 -->
+		<header id="header">
+			<span class="profile">
+				<img src="images/profile.jpg" alt="{{ site.url  }}/category" />
+				<!-- 검색창 -->
+				<div class="search">
+					<!-- Ex 3: Modify forms -->
+					<form class="search-form" action="index.html" method="get">
+						<input type="text" name="query" placeholder="제품을 검색하세요!">
+						<input type="submit" value="search">
+					</form>
+				</div>
+			</span>
 
-		</div>
+		<!-- 목룍 -->
+			<ul class="link">
+				<li><a href="{{ site.url }}/category" class="category"><span class="label">카테고리</span></a></li>
+				<li><a href="{{ site.url }}/playlist" class="playlist"><span class="label">플레이리스트</span></a></li>
+			</ul>
+		</header>
 
+
+
+
+		<footer id="footer">
+			<li><a href="#" class="icon-mail"><span class="label">Mail</span></a></li>
+			<p>&copy; HyeyeonYang. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>. Demo Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+		</footer>
 
 	</body>
 </html>

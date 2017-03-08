@@ -1,0 +1,106 @@
+#header{
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+#header .profile {
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  width: 100%;
+  height: 10rem;
+
+}
+
+#header .profile img{
+  border-radius: 100%;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 8rem;
+  height: 8rem;
+}
+
+#header .profile div{
+  padding-left: 3rem;
+}
+
+#header ul.link li{
+  display: inline-block;
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 6rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  cursor: pointer;
+}
+
+#header ul.link li:hover{
+  border-bottom: 2px solid #ff006c;
+  color: #ff006c;
+}
+
+#header ul.link li a{
+  color:rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+
+}
+
+#main .thumbnails{
+  display: flex;
+}
+#main .thumbnails>div{
+  flex-grow: 1;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+#main .thumbnails img{
+  width: 100%;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  display: block;
+}
+#main .thumbnails a{
+  margin-bottom: 1.5rem;
+  display: block;
+}
+#main .thumbnails h3{
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+#footer{
+  text-align: center;
+  color:rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+  padding-bottom: 3rem;
+  font-size: 0.8rem;
+}
+#footer a{
+  color:rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  margin-bottom: 3rem;
+}
+#footer:before{
+  content:'';
+  display: block;
+  margin:2rem auto;
+  width: 10rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media(max-width:480px) {
+  #main .thumbnails{
+    display: block;
+  }
+}
