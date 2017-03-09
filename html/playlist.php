@@ -32,9 +32,6 @@
 			</div>
 
 			<!-- 정렬방식 설정 -->
-			<div>
-				<p>정렬</p>
-			</div>
 
 			<!-- 플레이리스트 표시 -->
 			<article id="playlist">
@@ -44,6 +41,7 @@
 						$query=$_GET['query'];
 						$arrays=$functions->loadVideo();
 						//var_dump($arrays);
+						$position=0;
 						foreach($arrays as $array){
 							$videoinfos = $array[0];
 							$videoinfo = $videoinfos[0];
@@ -61,36 +59,61 @@
 							<li id="date"><span><?=$date?></span></li>
 							<li id="runtime"><span><?=$min?>:<?=$sec?></span></li>
 						</ul>
-						<ul>
-							<li id="product"><span>제품 목록</span></li>
+						<!-- <ul>
+							<li id="product"><span class="show" name =<?="$position"?>>제품 목록</span></li> -->
 						</ul>
 					</div>
 
 					<!-- 제품목록 출력 -->
+					<div id="productlist" class = 'target wrapper2'>
+						<ul class="icons">
 					<?php
 						$productss = $array[1];
-
 						$products = $productss[0];
 						foreach($products as $product){
 							$productname = $product[0];
 							$productlink = $product[1];
 					?>
 
-					<!-- 자바스크립트 추가부분 -->
-					<p>
-						<a href=<?=$productlink?>><?=$productname?> </a>
-					</p>
-				<?php
-				}
-			}
-		?>
+					<li><a href=<?=$productlink?>><span id="listlist" class="list"><?=$productname?></span></a></li>
+						<?php
+							}
+						?>
+					</div>
+					<?php
+						$position++;
+						}
+					?>
+					</ul>
 				</div>
-
 			</article>
+
 			<footer id="footer">
 				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
 				<p>&copy; Hyeyeon. All rights reserved.</p>
 			</footer>
-	</div>
+		</div>
+
+	<script type="text/javascript">
+
+		 var spans = document.getElementsByClassName('show');
+		 for(var i =0;i<spans.length;i++){
+		 	var position = spans[i].getAttribute('name');
+		 	//alert("position : "+position);
+		 	//spans[i].addEventListener('click',function(){changevisible(position)});
+		 	var query = "spans["+i+"].addEventListener('click', function(){changevisible("+position+");}, false)";
+		 	eval(query);
+
+		 }
+		 function changevisible(position){
+		  var wrappers=document.getElementsByClassName('target');
+		  if (wrappers[position].className=="target wrapper2"){
+		    wrappers[position].className="target wrapper1";
+		  }
+		  else if(wrappers[position].className=="target wrapper1"){
+		    wrappers[position].className="target wrapper2";
+		  }
+		 }
+	 	</script>
 	</body>
 </html>

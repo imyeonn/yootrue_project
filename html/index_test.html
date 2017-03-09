@@ -24,7 +24,6 @@
 					</form>
 				</div>
 			</span>
-
 		<!-- 목룍 -->
 			<ul class="link">
 				<li><a href="{{ site.url }}/category" class="category"><span class="label">카테고리</span></a></li>
@@ -35,26 +34,56 @@
 	<!-- {% if page.title == "category" %}
 	{% include category.html %}
 	{% else %} -->
-
-		<article id="searchresult">
-			<img src="http://shopping.phinf.naver.net/main_4057786/4057786331.20130130180342.jpg?type=f300">
+		<div class = "blank"></div>
+		<article id="categorylist">
 			<div>
-				<h2>제품 이름 자리</h2>
-				<ul id=prolist>
-					<li id="count"><span>30회 등장</span></li>
-					<li id="video"><span>등장 영상 보기</span></li>
-				</ul>
+				<h2 class = 'show' name = "0">
+					스킨케어
+				</h2>
+				<div class = 'target wrapper2'>
+					<h3>
+						<a href="category.php?query='B0101'">스킨,미스트</a>
+					</h3>
+					<h3>
+						<a href="category.php?query='B0102'">로션,크림,에센스</a>
+					</h3>
+					<h3>
+						<a href="category.php?query='B0103'">기타</a>
+					</h3>
+				</div>
 			</div>
-		</article>
-
-		<article id="playlist">
-			<img src="https://i.ytimg.com/vi/NEVltC5BgsA/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=GaB81LnJVjYPno0o0Wi8_7gfWa0">
 			<div>
-				<h2>영상 제목 자리</h2>
-				<ul class=prolist>
-					<li id="date"><span>2016.03.01</span></li>
-					<li id="video"><span>사용 제품</span></li>
-				</ul>
+				<h2 class = 'show' name = "1">
+					페이스 메이크업
+				</h2>
+				<div class = 'target wrapper2'>
+					<h3>
+						<a href="category.php?query='B0201'">베이스</a>
+					</h3>
+					<h3>
+						<a href="category.php?query='B0202'">컨실러</a>
+					</h3>
+					<h3>
+						<a href="category.php?query='B0203'">파운데이션,파우더</a>
+					</h3>
+
+				</div>
+			</div>
+			<div>
+				<h2 class = 'show' name = "2">
+					포인트 메이크업
+				</h2>
+				<div class = 'target wrapper2'>
+					<h3>
+						<a href="category.php?query='B0301">아이,아이브로우</a>
+					</h3>
+					<h3>
+						<a href="category.php?query='B0302'">치크,하이라이터,섀딩</a>
+					</h3>
+					<h3>
+						<a href="category.php?query='B0303'">립</a>
+					</h3>
+				</div>
 			</div>
 		</article>
 
@@ -65,5 +94,28 @@
 		</footer> -->
 
 	</div>
+	<script type="text/javascript">
+
+		 var h2s = document.getElementsByClassName('show');
+		 for(var i =0;i<h2s.length;i++){
+		 	var position = h2s[i].getAttribute('name');
+		 	//alert("position : "+position);
+		 	//spans[i].addEventListener('click',function(){changevisible(position)});
+		 	var query = "h2s["+i+"].addEventListener('click', function(){changevisible("+position+");}, false)";
+		 	eval(query);
+
+		 }
+		 function changevisible(position){
+		  var wrappers=document.getElementsByClassName('target');
+		  if (wrappers[position].className=="target wrapper2"){
+		    wrappers[position].className="target wrapper1";  
+		  }
+		  else if(wrappers[position].className=="target wrapper1"){
+		    wrappers[position].className="target wrapper2";
+		  }
+		 }
+		  
+	  
+	 	</script>
 	</body>
 </html>

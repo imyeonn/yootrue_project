@@ -230,50 +230,13 @@ body{
   cursor: pointer;
 }
 
-#playlist{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: block;
-  width: 100%;
-}
-
-#playlist>img{
-  display: inline-block;
-  float: left;
-  height: 6rem;
-  margin: 0.5rem;
-  margin-left: 1rem;
-}
-
-#playlist>div{
-  display: inline-block;
-  float: left;
-  margin-left: 0.5rem;
-}
-
-#playlist>div h2{
-  font-size: 1.1rem;
-  color:rgba(0, 0, 0, 0.8);
-  font-weight: 600;
-  line-height: 2.3rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0rem;
-}
-
-#date{
-  display: inline-block;
-  padding: 0.2rem 0px 0.5rem 0.2rem;
-  width: 5rem;
-  height: 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-  color:rgba(0, 0, 0, 0.6);
-  font-weight: 500;
-}
 
 
 
+
+
+/*
+playlist.php*/
 
 #playlist{
   padding-top: 0.5rem;
@@ -289,6 +252,7 @@ body{
   margin: 0.5rem;
   margin-left: 1rem;
 }*/
+
 #playlist>div.playbox>span.thumbnail>img{
   display: inline-block;
   float: left;
@@ -299,7 +263,7 @@ body{
 #playlist>div.playbox> span.thumbnail{
   display:inline-block;
   float: left;
-  weight: 6rem;
+  height: 4.5rem;
   margin: 0.5rem;
   border: 1px solid black;
 }
@@ -329,22 +293,22 @@ body{
   margin-bottom: 0.5rem;
 }
 
-#videolist{
+#productlist{
   border: 0.5px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.1);
-  width: 19rem;
+  width: 17.5rem;
 }
 
-#videolist>ul.icons{
+#productlist>ul.icons{
   display: inline-block;
 }
 
-#videolist>ul.icons>li>a{
+#productlist>ul.icons>li>a{
   text-decoration: none;
   color:rgba(0, 0, 0, 0.7);
   font-size: 0.8rem;
   line-height: 1.3rem;
-  width: 20rem;
+  width: 17rem;
   display: inline-block;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -353,15 +317,15 @@ body{
 
 }
 
-#videolist>ul.icons>li>a:hover{
+#productlist>ul.icons>li>a:hover{
     color:#ff006c;
 }
 
-#videolist>ul.icons>li>a:active{
+#productlist>ul.icons>li>a:active{
     color:#ff006c;
 }
 
-#count{
+#date{
   display: inline-block;
   padding: 0.2rem;
   width: 5rem;
@@ -378,7 +342,24 @@ body{
   border-radius: 0.2rem;
 }
 
-#video{
+#runtime{
+  display: inline-block;
+  padding: 0.2rem;
+  width: 5rem;
+  height: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.8rem;
+  color:rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  line-height: 2rem;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+}
+
+#product{
   display: inline-block;
   padding: 0.2rem;
   width: 12.7rem;
@@ -397,59 +378,13 @@ body{
   cursor: pointer;
 }
 
-#playlist{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: block;
-  width: 100%;
-}
-
-#playlist>img{
-  display: inline-block;
-  float: left;
-  height: 6rem;
-  margin: 0.5rem;
-  margin-left: 1rem;
-}
-
-#playlist>div{
-  display: inline-block;
-  float: left;
-  margin-left: 0.5rem;
-}
-
-#playlist>div h2{
-  font-size: 1.1rem;
-  color:rgba(0, 0, 0, 0.8);
-  font-weight: 600;
-  line-height: 2.3rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0rem;
-}
-
-#date{
-  display: inline-block;
-  padding: 0.2rem 0px 0.5rem 0.2rem;
-  width: 5rem;
-  height: 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-  color:rgba(0, 0, 0, 0.6);
-  font-weight: 500;
-}
 
 
 
 
 
 
-
-
-
-
-
-
+/*푸터*/
 
 #footer{
   width: 100%;
