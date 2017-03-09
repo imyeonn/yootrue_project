@@ -31,6 +31,7 @@
 			<div class="blank">
 			</div>
 
+			<!-- 정렬방식 설정 -->
 			<div>
 				<p>정렬</p>
 			</div>
