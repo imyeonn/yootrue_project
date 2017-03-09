@@ -36,21 +36,21 @@
 					<!-- 제품리스트 출력 -->
 					<?php
 						include 'functions.php';
-						$functions=new Functions();
-				        $query=$_GET['query'];
-				        $position = 0;
-			      		$arrays=$functions->searchProducts($query);
-				        //var_dump($arrays);
-			         	foreach($arrays as $array){
-				          $productinfo = $array[0];
-				          $productnames = $productinfo[0];
-				          $productname = $productnames[0];
-				          $productimage = $productnames[1];
-				          $counts = $array[1];
-				          $count = $counts[0];
+							$functions=new Functions();
+				      $query=$_GET['query'];
+				      $position = 0;
+			      	$arrays=$functions->searchProducts($query);
+				      //var_dump($arrays);
+			        foreach($arrays as $array){
+				        $productinfo = $array[0];
+				        $productnames = $productinfo[0];
+				        $productname = $productnames[0];
+				        $productimage = $productnames[1];
+				        $counts = $array[1];
+				        $count = $counts[0];
      			?>
 					<div class="productbox">
-						<span class="imagebox"><img src=<?=$productimage?> alt="product image"/></span>
+						<span class="imagebox"><img src=<?=$productimage?> onERROR="this.src='images/alt_productimage.png'" /></span>
 						<div class="namename">
 							<h2><?=$productname?></h2>
 	            <ul>
@@ -116,14 +116,14 @@
 		 function changevisible(position){
 		  var wrappers=document.getElementsByClassName('target');
 		  if (wrappers[position].className=="target wrapper2"){
-		    wrappers[position].className="target wrapper1";  
+		    wrappers[position].className="target wrapper1";
 		  }
 		  else if(wrappers[position].className=="target wrapper1"){
 		    wrappers[position].className="target wrapper2";
 		  }
 		 }
-		  
-	  
+
+
 	 	</script>
 	</body>
 </html>

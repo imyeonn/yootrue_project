@@ -24,7 +24,7 @@ body{
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 1rem;
-  width: 100%;
+  /*width: 100%;*/
 }
 #header .profile {
   margin-bottom: 0rem;
@@ -56,6 +56,8 @@ body{
 
 #header ul.link{
   box-sizing: border-box;
+  height: 60px;
+
 }
 
 #header ul.link li{
@@ -87,7 +89,14 @@ body{
   color:#ff006c;
 }
 
+#header ul.link li:active{
+  border-bottom: 2px solid #ff006c;
+  color:#ff006c;
+}
 
+#header ul.link li a:active{
+  color:#ff006c;
+}
 
 /*추가*/
 
@@ -125,13 +134,11 @@ body{
   weight: 4.5rem;
   height: 4.5rem;
   margin: 0.5rem;
-  margin-left: 1rem;
-  /*border: 1px solid black;*/
+  border: 1px solid black;
 }
 
 #searchresult>div.productbox{
   display: block;
-  margin-left: 0.5rem;
   margin-bottom: 1rem;
   float: center;
   box-sizing: border-box;
@@ -142,7 +149,7 @@ body{
   color:rgba(0, 0, 0, 0.8);
   font-weight: 600;
   line-height: 2.3rem;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
   margin-bottom: 0rem;
   display: inline-block;
   text-overflow: ellipsis;
@@ -153,6 +160,12 @@ body{
 
 #searchresult>div.productbox>div.namename ul{
   margin-bottom: 0.5rem;
+}
+
+#videolist{
+  border: 0.5px solid rgba(239, 238, 238, 0.4);
+  background-color: rgba(239, 238, 238, 0.1);
+  width: 19rem;
 }
 
 #videolist>ul.icons{
@@ -177,6 +190,9 @@ body{
     color:#ff006c;
 }
 
+#videolist>ul.icons>li>a:active{
+    color:#ff006c;
+}
 
 #count{
   display: inline-block;
@@ -198,7 +214,7 @@ body{
 #video{
   display: inline-block;
   padding: 0.2rem;
-  width: 13.5rem;
+  width: 12.7rem;
   height: 1rem;
   display: inline-flex;
   justify-content: center;
@@ -211,6 +227,7 @@ body{
   background-color: #ff006c;
   border: 0.1px solid #ff006c;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 #playlist{
@@ -254,6 +271,185 @@ body{
   color:rgba(0, 0, 0, 0.6);
   font-weight: 500;
 }
+
+
+
+
+#playlist{
+  padding-top: 0.5rem;
+  padding-bottom: 4rem;
+  display: block;
+  box-sizing: border-box;
+}
+
+#playlist>img{
+  display: inline-block;
+  float: left;
+  weight: 6rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+#playlist>div.playbox>span.thumbnail>img{
+  display: inline-block;
+  float: left;
+  weight: 6rem;
+
+}
+
+/*이미지 박스 만들어서 이미지칸 고정*/
+#searchresult>div.productbox> span.imagebox{
+  display:inline-block;
+  float: left;
+  weight: 4.5rem;
+  height: 4.5rem;
+  margin: 0.5rem;
+  border: 1px solid black;
+}
+
+#searchresult>div.productbox{
+  display: block;
+  margin-bottom: 1rem;
+  float: center;
+  box-sizing: border-box;
+}
+
+#searchresult>div.productbox>div.namename h2{
+  font-size: 1.1rem;
+  color:rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  line-height: 2.3rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0rem;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 19rem;
+}
+
+#searchresult>div.productbox>div.namename ul{
+  margin-bottom: 0.5rem;
+}
+
+#videolist{
+  border: 0.5px solid rgba(239, 238, 238, 0.4);
+  background-color: rgba(239, 238, 238, 0.1);
+  width: 19rem;
+}
+
+#videolist>ul.icons{
+  display: inline-block;
+}
+
+#videolist>ul.icons>li>a{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.7);
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  width: 20rem;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-flex;
+
+}
+
+#videolist>ul.icons>li>a:hover{
+    color:#ff006c;
+}
+
+#videolist>ul.icons>li>a:active{
+    color:#ff006c;
+}
+
+#count{
+  display: inline-block;
+  padding: 0.2rem;
+  width: 5rem;
+  height: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.8rem;
+  color:rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  line-height: 2rem;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+}
+
+#video{
+  display: inline-block;
+  padding: 0.2rem;
+  width: 12.7rem;
+  height: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.8rem;
+  color:rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  line-height: 2rem;
+  background-color: #ff006c;
+  border: 0.1px solid #ff006c;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+#playlist{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: block;
+  width: 100%;
+}
+
+#playlist>img{
+  display: inline-block;
+  float: left;
+  height: 6rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+
+#playlist>div{
+  display: inline-block;
+  float: left;
+  margin-left: 0.5rem;
+}
+
+#playlist>div h2{
+  font-size: 1.1rem;
+  color:rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  line-height: 2.3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0rem;
+}
+
+#date{
+  display: inline-block;
+  padding: 0.2rem 0px 0.5rem 0.2rem;
+  width: 5rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color:rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
