@@ -45,6 +45,7 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 6rem;
   height: 6rem;
+  box-sizing: border-box;
 }
 
 #header .profile div{
@@ -52,14 +53,16 @@ body{
   padding-top: 2rem;
 }
 
-
+#header ul.link{
+  box-sizing: border-box;
+}
 
 #header ul.link li{
   display: inline-block;
   padding: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 11rem;
+  width: 10rem;
   height: 2rem;
   display: inline-flex;
   justify-content: center;
@@ -87,10 +90,15 @@ body{
 
 /*추가*/
 
+#wrapper>div.blank {
+  clear: both;
+}
+
 #searchresult{
-  padding-top: 4rem;
+  padding-top: 0.5rem;
   padding-bottom: 4rem;
   display: block;
+  box-sizing: border-box;
 }
 
 #searchresult>img{
@@ -125,6 +133,7 @@ body{
   margin-left: 0.5rem;
   margin-bottom: 1rem;
   float: center;
+  box-sizing: border-box;
 }
 
 #searchresult>div.productbox>div.namename h2{

@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>카테고리</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
 		<link rel="stylesheet" href="assets/css/header_test.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
@@ -27,6 +27,9 @@
 					<li><a href="{{ site.url }}/playlist" class="playlist"><span class="label">플레이리스트</span></a></li>
 				</ul>
 			</header>
+
+			<div class="blank">
+			</div>
 
 			<!-- 검색결과 표시 -->
 			<article id="searchresult">
@@ -93,7 +96,7 @@
 			</article>
 
 			<footer id="footer">
-				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기로!</span></a>
+				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
 				<p>&copy; Hyeyeon. All rights reserved.</p>
 			</footer>
 		</div>
