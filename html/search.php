@@ -37,16 +37,17 @@
 					<?php
 						include 'functions.php';
 						$functions=new Functions();
-	          $query=$_GET['query'];
-      			$arrays=$functions->searchProducts($query);
-	        	//var_dump($arrays);
-         		foreach($arrays as $array){
-	          $productinfo = $array[0];
-	          $productnames = $productinfo[0];
-	          $productname = $productnames[0];
-	          $productimage = $productnames[1];
-	          $counts = $array[1];
-	          $count = $counts[0];
+				        $query=$_GET['query'];
+				        $position = 0;
+			      		$arrays=$functions->searchProducts($query);
+				        //var_dump($arrays);
+			         	foreach($arrays as $array){
+				          $productinfo = $array[0];
+				          $productnames = $productinfo[0];
+				          $productname = $productnames[0];
+				          $productimage = $productnames[1];
+				          $counts = $array[1];
+				          $count = $counts[0];
      			?>
 					<div class="productbox">
 						<span class="imagebox"><img src=<?=$productimage?> alt="product image"/></span>
@@ -54,7 +55,7 @@
 							<h2><?=$productname?></h2>
 	            <ul>
 								<li id="count"><span><?="$count"?>회 등장</span></li>
-	              <li id="video"><span>등장 영상 보기</span></li>
+	              <li id="video" class = "show" name =<?="$position"?>><span>등장 영상 보기</span></li>
 	            </ul>
 						</div>
 
@@ -68,7 +69,7 @@
 	            //print '<br>';
 	            $videos = $videoss[0];
 						?>
-						<div id="videolist">
+						<div id="videolist" class = 'target wrapper2'>
 							<ul class="icons">
 								<?php
 									foreach($videos as $video){
@@ -79,9 +80,10 @@
 	                	$link=$video[1];
 	              ?>
 
-	              <li><a href=<?=$link?>><span id="listlist"><?=$title?></span></a></li>
+	              <li><a href=<?=$link?>><span id="listlist" class"list"><?=$title?></span></a></li>
 									<?php
 	                	}
+	                	$position++;
 									?>
 						  </ul>
 						</div>
@@ -100,5 +102,28 @@
 				<p>&copy; Hyeyeon. All rights reserved.</p>
 			</footer>
 		</div>
+		<script type="text/javascript">
+
+		 var spans = document.getElementsByClassName('show');
+		 for(var i =0;i<spans.length;i++){
+		 	var position = spans[i].getAttribute('name');
+		 	//alert("position : "+position);
+		 	//spans[i].addEventListener('click',function(){changevisible(position)});
+		 	var query = "spans["+i+"].addEventListener('click', function(){changevisible("+position+");}, false)";
+		 	eval(query);
+
+		 }
+		 function changevisible(position){
+		  var wrappers=document.getElementsByClassName('target');
+		  if (wrappers[position].className=="target wrapper2"){
+		    wrappers[position].className="target wrapper1";  
+		  }
+		  else if(wrappers[position].className=="target wrapper1"){
+		    wrappers[position].className="target wrapper2";
+		  }
+		 }
+		  
+	  
+	 	</script>
 	</body>
 </html>

@@ -17,6 +17,7 @@ body{
 #wrapper{
   max-width: 30rem;
   margin: 3rem auto;
+  width: 100%;
 }
 
 #header{
@@ -270,4 +271,13 @@ body{
   display: block;
   color:#d3d6db;
   text-decoration: none;
+}
+
+.wrapper1 {
+  height:5.5rem;
+  overflow:auto;
+}
+.wrapper2 {
+  height:0rem;
+  overflow:auto;
 }
