@@ -455,6 +455,14 @@ playlist.php*/
 
 
 /*category.html css*/
+/*카테고리에선 카테고리에 분홍효과주고싶은데 안됨*/
+#label-live{
+  border-bottom: 2px solid #ff006c;
+}
+
+#label-live a{
+  color:#ff006c;
+}
 
 #categorylist h2.show {
   cursor: pointer;
@@ -479,22 +487,29 @@ playlist.php*/
 }
 
 #categorylist h3{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.02);
   margin-top: 0;
   margin-bottom: 0;
-}
-
-
-#categorylist h3 a{
-  text-decoration: none;
-  color:rgba(0, 0, 0, 0.7);
-  font-size: 1.1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
+  color:rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 3.3rem;
 }
 
-#categorylist h3 a:hover{
-  border-bottom: 2px solid #ff006c;
+#categorylist a{
+  text-decoration: none;
+}
+
+#categorylist h2:hover{
   color:#ff006c;
 }
+
+#categorylist h3:hover{
+  color:#ff006c;
+}
+
+
+
+/*category.php 설정*/

@@ -16,14 +16,14 @@
 					<!-- 검색창 -->
 					<div class="search">
 						<form class="search-form" action="search.php" method="get">
-							<input type="text" name="query" placeholder="제품을 검색하세요!">
-							<input type="submit" value="search">
+							<input class="input" type="text" name="query" placeholder="제품을 검색하세요!">
+							<input class="icon-search" type="submit" value="">
 						</form>
 					</div>
 				</span>
 				<!-- 카테고리/플레이리스트 분류 -->
 				<ul class="link">
-					<li><a href="category.html" class="category"><span class="label">카테고리</span></a></li>
+					<li id="label-live"><a href="category.html" class="category"><span class="label">카테고리</span></a></li>
 					<li><a href="playlist.php" class="playlist"><span class="label">플레이리스트</span></a></li>
 				</ul>
 			</header>
@@ -95,7 +95,7 @@
 					<select id="order" required="required" onchange="javascript:selectEvent(this,'<?=$_GET['query']?>')">
 						<option value="sort" selected>정렬</option>
 						<option value="order">가나다순</option>
-						<option value="latest">최신순</option>	
+						<option value="latest">최신순</option>
 					</select>
 					<input type="hidden" name="order">
 					<input type="hidden" name="query">
@@ -108,7 +108,7 @@
 						$functions=new Functions();
 						$query=$_GET['query'];
 						$position = 0;
-					    $arrays=$functions->searchCategory($query);	
+					    $arrays=$functions->searchCategory($query);
 				        //var_dump($arrays);
 			         	foreach($arrays as $array){
 				          $productinfo = $array[0];
@@ -185,7 +185,7 @@
 		 function changevisible(position){
 		  var wrappers=document.getElementsByClassName('target');
 		  if (wrappers[position].className=="target wrapper2"){
-		    wrappers[position].className="target wrapper1";  
+		    wrappers[position].className="target wrapper1";
 		  }
 		  else if(wrappers[position].className=="target wrapper1"){
 		    wrappers[position].className="target wrapper2";
@@ -199,8 +199,8 @@
 		 	var link = "category.php?order="+selectObj.value+"&query="+query;
 		 	location.href=link;
 		 }
-		  
-	  
+
+
 	 	</script>
 	</body>
 </html>
