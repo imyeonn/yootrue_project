@@ -413,11 +413,6 @@ playlist.php*/
 
 /*푸터*/
 
-#footer:before{
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  width: 10rem;
-  margin: 0 auto;
-}
 
 #footer{
   width: 100%;
@@ -434,6 +429,16 @@ playlist.php*/
   color:#d3d6db;
   text-decoration: none;
 }
+
+#forline{
+  content: '';
+  display: block;
+  border-top: 1px solid #d3d6db;
+  width: 10rem;
+  margin: 2rem auto;
+  margin-top: 4rem;
+}
+
 
 .wrapper1 {
   height:5.5rem;

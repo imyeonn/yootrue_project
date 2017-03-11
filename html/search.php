@@ -123,7 +123,7 @@
 	      ?>
 			</article>
 
-			<div class="blank">
+			<div id="forline">
 			</div>
 
 			<footer id="footer">
