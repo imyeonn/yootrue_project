@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 ul {
   padding-left: 0;
   margin: 0;
@@ -11,9 +13,8 @@ li {
 body{
   background-image: url(../../images/crop.jpg);
   background-size:cover;
-  /*font-family: 'Source Sans Pro', sans-serif;*/
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 62.5%
-  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -168,7 +169,7 @@ body{
 #searchresult>div.productbox>div.namename h2{
   font-size: 1.1rem;
   color:rgba(0, 0, 0, 0.7);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4rem;
   margin-top: 0.2rem;
   margin-bottom: 0;
@@ -297,7 +298,7 @@ playlist.php*/
 #playlist>div.playbox>div.namename h2{
   font-size: 1.1rem;
   color:rgba(0, 0, 0, 0.7);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2rem;
   margin-top: 0.1rem;
   margin-bottom: 0;
@@ -410,7 +411,7 @@ playlist.php*/
   display: block;
   text-align: center;
   color:#d3d6db;
-  font-weight: 200;
+  font-weight: 100;
   padding-bottom: 3rem;
   font-size: 0.8rem;
 }
