@@ -34,7 +34,7 @@
 		<div class = "blank"></div>
 
 		<article id="categorylist">
-			<div>
+			<div class="depth1">
 				<h2 class = 'show' name = "0">스킨케어</h2>
 				<div class = 'target wrapper2'>
 					<h3><a href="category.php?query=B0101">스킨,미스트</a></h3>
@@ -44,7 +44,7 @@
 				</div>
 			</div>
 
-			<div>
+			<div class="depth1">
 				<h2 class = 'show' name = "1">베이스 메이크업</h2>
 				<div class = 'target wrapper2'>
 					<h3><a href="category.php?query=B0201">선케어</a></h3>
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 
-			<div>
+			<div class="depth1">
 				<h2 class = 'show' name = "2">포인트 메이크업</h2>
 				<div class = 'target wrapper2'>
 					<h3><a href="category.php?query=B0301">아이브로우</a></h3>
@@ -92,9 +92,10 @@
 		 function changevisible(position){
 		  var wrappers=document.getElementsByClassName('target');
 		  if (wrappers[position].className=="target wrapper2"){
-		    wrappers[position].className="target wrapper1";
+		    wrappers[position].className="target wrapper3";
 		  }
-		  else if(wrappers[position].className=="target wrapper1"){
+			// 여기 target wrapper3이 원래 1이었음
+		  else if(wrappers[position].className=="target wrapper3"){
 		    wrappers[position].className="target wrapper2";
 		  }
 		 }

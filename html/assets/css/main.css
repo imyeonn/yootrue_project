@@ -449,5 +449,41 @@ playlist.php*/
   overflow:auto;
 }
 
+.wrapper3 {
+  height: auto;
+}
+
 
 /*category.html css*/
+
+#categorylist h2.show {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.1rem;
+  color:rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+#categorylist div.wrapper2 {
+  cursor: pointer;
+}
+
+#categorylist div.depth1{
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 360px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#categorylist h3 a{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.8);
+}
+
+#categorylist h3 a:hover{
+  border-bottom: 2px solid #ff006c;
+  color:#ff006c;
+}
