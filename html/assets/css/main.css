@@ -142,25 +142,19 @@ body{
 }
 
 #searchresult>div.productbox>span.imagebox>img{
-  background: url("images/picbackground.png");
-  background-size: cover;
-
   display: inline-block;
   float: left;
   height: 65px;
-  weight: 65px;
-
+  width: auto;
 }
 
 /*이미지 박스 만들어서 이미지칸 고정*/
 #searchresult>div.productbox> span.imagebox{
-  background: url("images/picbackground.png");
-  background-size: cover;
-
   display:inline-block;
   float: left;
-  weight: 65px;
-  height: auto;
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
   margin-right: 10px;
 }
 
@@ -275,13 +269,6 @@ playlist.php*/
   box-sizing: border-box;
 }
 
-/*#playlist>img{
-  display: inline-block;
-  float: left;
-  weight: 6rem;
-  margin: 0.5rem;
-  margin-left: 1rem;
-}*/
 
 #playlist>div.playbox>a>span>img{
   display: inline-block;
