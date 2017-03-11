@@ -125,6 +125,8 @@
 					<input type="hidden" name="query">
 				</form>
 			</div>
+			<div class="blank"></div>
+
 			<article id="searchresult">
 					<!-- 제품리스트 출력 -->
 					<?php
@@ -189,6 +191,8 @@
 	       	}
 	      ?>
 			</article>
+
+			<div id="forline"></div>
 
 			<footer id="footer">
 				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
