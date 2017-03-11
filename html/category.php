@@ -28,7 +28,9 @@
 				</ul>
 			</header>
 
-			<div class="blank"></div>
+		<div class="blank"></div>
+		
+		<span id="category-depth">
 			<div class="back"><a href="category.html"><img src="images/back.png" /></a>
 
 			<?php
@@ -105,7 +107,8 @@
 
 			<?php
 				;}?>
-				
+		</span>
+
 			<!-- 검색결과 표시 -->
 			<div>
 				<form class="search-form" action="category.php" method="get">

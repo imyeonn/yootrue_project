@@ -513,3 +513,17 @@ playlist.php*/
 
 
 /*category.php 설정*/
+#category-depth {
+  width: 360px;
+  height: 2rem;
+
+}
+
+#category-depth .depths{
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.1rem;
+  color:rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  line-height: 2.1rem;
+}
