@@ -263,8 +263,9 @@ body{
 playlist.php*/
 
 #playlist{
-  padding-top: 0.5rem;
-  padding-bottom: 4rem;
+  /*padding-top: 0.5rem;
+  padding-bottom: 4rem;*/
+  margin: 5px;
   display: block;
   box-sizing: border-box;
 }
@@ -280,37 +281,37 @@ playlist.php*/
 #playlist>div.playbox>span.thumbnail>img{
   display: inline-block;
   float: left;
-  weight: 6rem;
+  height: 120px;
 
 }
 
 #playlist>div.playbox> span.thumbnail{
   display:inline-block;
   float: left;
-  height: 4.5rem;
-  margin: 0.5rem;
-  border: 1px solid black;
+  height: 120px;
+  margin: auto;
+  margin-right: 10px;
 }
 
 #playlist>div.playbox{
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   float: center;
   box-sizing: border-box;
 }
 
 #playlist>div.playbox>div.namename h2{
   font-size: 1.1rem;
-  color:rgba(0, 0, 0, 0.8);
+  color:rgba(0, 0, 0, 0.7);
   font-weight: 600;
-  line-height: 2.3rem;
-  margin-top: 0.6rem;
-  margin-bottom: 0rem;
+  line-height: 1.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
   display: inline-block;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 17.5rem;
+  width: 275px;
 }
 
 #playlist>div.playbox>div.namename ul{
@@ -320,7 +321,10 @@ playlist.php*/
 #productlist{
   border: 0.5px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.1);
-  width: 17.5rem;
+  width: 275px;
+  padding: 1px 2px 2px 2px;
+  float: right;
+  margin-bottom: 1rem;
 }
 
 #productlist>ul.icons{
@@ -332,7 +336,7 @@ playlist.php*/
   color:rgba(0, 0, 0, 0.7);
   font-size: 0.8rem;
   line-height: 1.3rem;
-  width: 17rem;
+  width: 300rem;
   display: inline-block;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -362,7 +366,7 @@ playlist.php*/
   color:rgba(0, 0, 0, 0.6);
   font-weight: 500;
   line-height: 2rem;
-  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  /*border: 0.1px solid rgba(0, 0, 0, 0.2);*/
   border-radius: 0.2rem;
 }
 
@@ -379,14 +383,14 @@ playlist.php*/
   color:rgba(0, 0, 0, 0.6);
   font-weight: 500;
   line-height: 2rem;
-  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  /*border: 0.1px solid rgba(0, 0, 0, 0.2);*/
   border-radius: 0.2rem;
 }
 
 #product{
   display: inline-block;
   padding: 0.2rem;
-  width: 12.7rem;
+  width: 160px;
   height: 1rem;
   display: inline-flex;
   justify-content: center;
