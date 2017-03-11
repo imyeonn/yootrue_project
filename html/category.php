@@ -28,67 +28,84 @@
 				</ul>
 			</header>
 
-			<div class="blank">
-			</div>
-			<?php
+			<div class="blank"></div>
+			<div class="back"><a href="category.html"><img src="images/back.png" /></a>
 
+			<?php
 				$query=$_GET['query'];
 				$code= str_replace("'", '', $query);
 			    if($code=='B0101'){
 			?>
-				<div>
-					스킨케어>스킨,미스트
-				</div>
+				<div class="depths">스킨케어 > 스킨,미스트</div>
 			<?php
 				;}else if ($code=='B0102'){
 				?>
-				<div>
-					스킨케어>로션,크림,에센스
-				</div>
+				<div class="depths">스킨케어 > 로션, 크림</div>
 			<?php
 				;}else if ($code=='B0103'){
 			?>
-				<div>
-					스킨케어>기타
-				</div>
+			<div class="depths">스킨케어 > 에센스, 오일</div>
+			<?php
+				;}else if ($code=='B0104'){
+			?>
+			<div class="depths">스킨케어 > 기타</div>
+
 			<?php
 				;}else if ($code=='B0201'){
 			?>
-				<div>
-					페이스 메이크업>베이스
-				</div>
+			<div class="depths">베이스 메이크업 > 선케어</div>
 			<?php
 				;}else if ($code=='B0202'){
 			?>
-				<div>
-					페이스 메이크업>컨실러
-				</div>
+			<div class="depths">베이스 메이크업 > 베이스</div>
 			<?php
 				;}else if ($code=='B0203'){
 			?>
-				<div>
-					페이스 메이크업>파운데이션, 파우더
-				</div>
+			<div class="depths">베이스 메이크업 > 컨실러</div>
+			<?php
+				;}else if ($code=='B0204'){
+			?>
+			<div class="depths">베이스 메이크업 > 파운데이션</div>
+			<?php
+				;}else if ($code=='B0205'){
+			?>
+			<div class="depths">베이스 메이크업 > 파우더</div>
 			<?php
 				;}else if ($code=='B0301'){
 			?>
-				<div>
-					포인트 메이크업>아이, 아이브로우
-				</div>
+			<div class="depths">포인트 메이크업 > 아이브로우</div>
 			<?php
 				;}else if ($code=='B0302'){
 			?>
-				<div>
-					포인트 메이크업>치크, 하이라이터, 섀딩
-				</div>
+			<div class="depths">포인트 메이크업 > 아이섀도우</div>
 			<?php
 				;}else if ($code=='B0303'){
 			?>
-				<div>
-					포인트 메이크업>립
-				</div>
-				<?php
-						;}?>
+			<div class="depths">포인트 메이크업 > 아이라이너</div>
+			<?php
+				;}else if ($code=='B0304'){
+			?>
+			<div class="depths">포인트 메이크업 > 마스카라</div>
+			<?php
+				;}else if ($code=='B0305'){
+			?>
+			<div class="depths">포인트 메이크업 > 치크, 하이라이터, 섀딩</div>
+			<?php
+				;}else if ($code=='B0306'){
+			?>
+			<div class="depths">포인트 메이크업 > 립스틱</div>
+			<?php
+				;}else if ($code=='B0307'){
+			?>
+			<div class="depths">포인트 메이크업 > 립틴트, 라커</div>
+			<?php
+				;}else if ($code=='B0308'){
+			?>
+			<div class="depths">포인트 메이크업 > 립글로스</div>
+
+			<?php
+				;}?>
+				
 			<!-- 검색결과 표시 -->
 			<div>
 				<form class="search-form" action="category.php" method="get">
