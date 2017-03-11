@@ -72,7 +72,7 @@
 			<?php
 				;}else if ($code=='B0205'){
 			?>
-			<div class="depths">베이스 메이크업 > 파우더</div>
+			<div class="depths">베이스 메이크업 > 파우더, 팩트</div>
 			<?php
 				;}else if ($code=='B0301'){
 			?>
