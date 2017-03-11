@@ -158,7 +158,7 @@ body{
 
 #searchresult>div.productbox{
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   float: center;
   box-sizing: border-box;
 }
@@ -167,8 +167,8 @@ body{
   font-size: 1.1rem;
   color:rgba(0, 0, 0, 0.8);
   font-weight: 600;
-  line-height: 2.3rem;
-  margin-top: 0;
+  line-height: 1.4rem;
+  margin-top: 0.2rem;
   margin-bottom: 0;
   display: inline-block;
   text-overflow: ellipsis;
