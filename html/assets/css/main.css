@@ -278,17 +278,19 @@ playlist.php*/
   margin-left: 1rem;
 }*/
 
-#playlist>div.playbox>span.thumbnail>img{
+#playlist>div.playbox>a>span>img{
   display: inline-block;
   float: left;
-  height: 120px;
+  width: 130px;
+  height: auto;
 
 }
 
-#playlist>div.playbox> span.thumbnail{
+#playlist>div.playbox>a>span.thumbnail{
   display:inline-block;
   float: left;
-  height: 120px;
+  width: 130px;
+  height: auto;
   margin: auto;
   margin-right: 10px;
 }
@@ -311,7 +313,7 @@ playlist.php*/
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 275px;
+  width: 210px;
 }
 
 #playlist>div.playbox>div.namename ul{
@@ -356,10 +358,10 @@ playlist.php*/
 #date{
   display: inline-block;
   padding: 0.2rem;
-  width: 5rem;
+  width: 120px;
   height: 1rem;
   display: inline-flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
 
   font-size: 0.8rem;
@@ -373,10 +375,10 @@ playlist.php*/
 #runtime{
   display: inline-block;
   padding: 0.2rem;
-  width: 5rem;
+  width: 120px;
   height: 1rem;
   display: inline-flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
 
   font-size: 0.8rem;
