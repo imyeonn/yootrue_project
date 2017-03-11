@@ -307,10 +307,10 @@ playlist.php*/
 }
 
 #playlist>div.playbox>div.namename h2{
-  font-size: 1.1rem;
+  font-size: 1rem;
   color:rgba(0, 0, 0, 0.7);
-  font-weight: 700;
-  line-height: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
   margin-top: 0.1rem;
   margin-bottom: 0;
   display: inline-block;
@@ -321,7 +321,7 @@ playlist.php*/
 }
 
 #playlist>div.playbox>div.namename ul{
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 
 #productlist{
@@ -392,7 +392,7 @@ playlist.php*/
 #product{
   display: inline-block;
   padding: 0.2rem;
-  width: 50%;
+  width: 100%;
   height: 1rem;
   display: inline-flex;
   justify-content: center;
