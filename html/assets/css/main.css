@@ -478,9 +478,20 @@ playlist.php*/
   cursor: pointer;
 }
 
+#categorylist h3{
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
 #categorylist h3 a{
   text-decoration: none;
-  color:rgba(0, 0, 0, 0.8);
+  color:rgba(0, 0, 0, 0.7);
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
 #categorylist h3 a:hover{
