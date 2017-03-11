@@ -123,6 +123,9 @@
 	      ?>
 			</article>
 
+			<div class="blank">
+			</div>
+
 			<footer id="footer">
 				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
 				<p>&copy; Hyeyeon. All rights reserved.</p>

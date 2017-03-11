@@ -42,6 +42,10 @@
 					<input type="hidden" name="order">
 				</form>
 			</div>
+
+			<div class="blank">
+			</div>
+
 			<!-- 플레이리스트 표시 -->
 			<article id="playlist">
 				<?php
@@ -99,6 +103,9 @@
 					</ul>
 				</div>
 			</article>
+
+			<div class="blank">
+			</div>
 
 			<footer id="footer">
 				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
