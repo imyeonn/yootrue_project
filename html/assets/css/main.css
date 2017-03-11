@@ -48,8 +48,8 @@ body{
   border-radius: 100%;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   box-sizing: border-box;
 }
 
@@ -75,7 +75,8 @@ body{
 
 /*아이콘 넣고싶음*/
 #header>span>div .icon-search {
-  height: 30px
+  height: 30px;
+  cursor: pointer;
 }
 
 
@@ -133,8 +134,9 @@ body{
 }
 
 #searchresult{
-  padding-top: 0.5rem;
-  padding-bottom: 4rem;
+  /*padding-top: 0.5rem;
+  padding-bottom: 4rem;*/
+  margin: 5px;
   display: block;
   box-sizing: border-box;
 }
@@ -165,7 +167,7 @@ body{
 
 #searchresult>div.productbox>div.namename h2{
   font-size: 1.1rem;
-  color:rgba(0, 0, 0, 0.8);
+  color:rgba(0, 0, 0, 0.7);
   font-weight: 600;
   line-height: 1.4rem;
   margin-top: 0.2rem;
@@ -174,7 +176,7 @@ body{
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 285px;
+  width: 275px;
 }
 
 #searchresult>div.productbox>div.namename ul{
@@ -184,9 +186,10 @@ body{
 #videolist{
   border: 0.5px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.2);
-  width: 280px;
+  width: 275px;
   padding: 1px 2px 2px 2px;
   float: right;
+  margin-bottom: 1rem;
 }
 
 #videolist>ul.icons{
@@ -198,7 +201,7 @@ body{
   color:rgba(0, 0, 0, 0.7);
   font-size: 0.8rem;
   line-height: 1.3rem;
-  width: 20rem;
+  width: 300rem;
   display: inline-block;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -235,7 +238,7 @@ body{
 #video{
   display: inline-block;
   padding: 0.2rem;
-  width: 184px;
+  width: 174px;
   height: 1rem;
   display: inline-flex;
   justify-content: center;
