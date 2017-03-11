@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>카테고리</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
-		<link rel="stylesheet" href="assets/css/header_test.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
 	<body>
@@ -37,7 +37,7 @@
 					<select id="order" required="required" onchange="javascript:selectEvent(this)">
 						<option value="sort" selected>정렬</option>
 						<option value="order">가나다순</option>
-						<option value="latest">최신순</option>	
+						<option value="latest">최신순</option>
 					</select>
 					<input type="hidden" name="order">
 				</form>
