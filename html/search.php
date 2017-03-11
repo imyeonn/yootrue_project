@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>카테고리</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
-		<link rel="stylesheet" href="assets/css/header_test.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
 	<body>
@@ -14,7 +14,7 @@
 				<span class="profile">
 					<a href="category.html"><img src="images/profile.jpg" alt="{{ site.url  }}/category" /></a>
 					<!-- 검색창 -->
-					<div class="search">
+					<div id="search">
 						<form class="search-form" action="search.php" method="get">
 							<?php
 								if(isset($_GET['query'])){
@@ -23,12 +23,12 @@
 							<?php
 								;}else{
 									?>
-								
-							<input type="text" name="query" placeholder="제품을 검색하세요!">
+
+							<input class="input" type="text" name="query" placeholder="제품을 검색하세요!">
 							<?php
 							;}
 							?>
-							<input type="submit" value="search">
+							<input class="icon-search" type="submit" value="">
 						</form>
 					</div>
 				</span>
@@ -41,17 +41,22 @@
 
 			<div class="blank">
 			</div>
-			<div>
+
+			<div id="sorting">
 				<form class="search-form" action="search.php" method="get">
 					<select id="order" required="required" onchange="javascript:selectEvent(this,'<?=$_GET['query']?>')">
 						<option value="sort" selected>정렬</option>
 						<option value="order">가나다순</option>
-						<option value="latest">최신순</option>	
+						<option value="latest">최신순</option>
 					</select>
 					<input type="hidden" name="order">
 					<input type="hidden" name="query">
 				</form>
 			</div>
+
+			<div class="blank">
+			</div>
+
 			<!-- 검색결과 표시 -->
 			<article id="searchresult">
 					<!-- 제품리스트 출력 -->
@@ -150,7 +155,7 @@
 		 	input2.value=query;
 		 	alert("order = " +input.value + " query = " + input2.value);
 		 	//var url= "./View.do?jubsu_date="+jubsu_date+"&jindan_name="+encodeURI(encodeURIComponent(jindan_name));
-		 	
+
 		 	var link = "search.php?order="+selectObj.value+"&query="+query;
 		 	var query1 = encodeURIComponent(query);
 		 	var link = "search.php?order="+selectObj.value+"&query="+query1;

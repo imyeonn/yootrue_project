@@ -43,6 +43,15 @@ body{
 
 }
 
+/*#header .search-form {
+  margin: 0;
+  border: 1px solid blue;
+}*/
+
+#header>span>div .input {
+  border: 1px solid red;
+}
+
 #header .profile img{
   margin-left: 2rem;
   border-radius: 100%;
@@ -57,16 +66,6 @@ body{
   margin: 0;
   border: 1px solid blue;
 }
-
-/*#header .search-form {
-  margin: 0;
-  border: 1px solid blue;
-}*/
-
-#header>span>div .input {
-  border: 1px solid red;
-}
-
 
 #header ul.link{
   box-sizing: border-box;
