@@ -14,10 +14,10 @@
 				<span class="profile">
 					<a href="category.html"><img src="images/profile.jpg" alt="{{ site.url  }}/category" /></a>
 					<!-- 검색창 -->
-					<div class="search">
+					<div id="search">
 						<form class="search-form" action="search.php" method="get">
-							<input type="text" name="query" placeholder="제품을 검색하세요!">
-							<input type="submit" value="search">
+							<input class="input" type="text" name="query" placeholder="제품을 검색하세요!">
+							<input class="icon-search" type="submit" value="">
 						</form>
 					</div>
 				</span>
