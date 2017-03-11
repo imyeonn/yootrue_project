@@ -32,7 +32,7 @@
 			</div>
 
 			<!-- 정렬방식 설정 -->
-			<div>
+			<div id="sorting">
 				<form class="search-form" action="playlist.php" method="get">
 					<select id="order" required="required" onchange="javascript:selectEvent(this)">
 						<option value="sort" selected>정렬</option>

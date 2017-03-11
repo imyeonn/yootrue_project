@@ -515,15 +515,47 @@ playlist.php*/
 /*category.php 설정*/
 #category-depth {
   width: 360px;
-  height: 2rem;
+  height: 60px;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+#category-depth>a>div.back img{
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#category-depth>a>div.back{
+  float: left;
+  display: inline-flex;
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  cursor: pointer;
 
 }
 
 #category-depth .depths{
-  cursor: pointer;
-  text-align: center;
+  align-items: center;
   font-size: 1.1rem;
-  color:rgba(0, 0, 0, 0.8);
+  color:rgba(0, 0, 0, 0.7);
   font-weight: 700;
   line-height: 2.1rem;
+  display: inline-flex;
+  float: left;
+  margin-left: 10px;
+
+}
+
+#category-depth .depths-box{
+  width: 300px;
+  height: 60px;
+  float: left;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
 }

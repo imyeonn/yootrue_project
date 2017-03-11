@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>카테고리</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
-		<link rel="stylesheet" href="assets/css/header_test.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
 	<body>
@@ -29,9 +29,10 @@
 			</header>
 
 		<div class="blank"></div>
-		
+
 		<span id="category-depth">
-			<div class="back"><a href="category.html"><img src="images/back.png" /></a>
+			<a href="category.html"><div class="back"><img src="images/back.png" /></div></a>
+			<div class="depths-box">
 
 			<?php
 				$query=$_GET['query'];
@@ -107,10 +108,13 @@
 
 			<?php
 				;}?>
+			</div>
 		</span>
 
+		<div class="blank"></div>
+
 			<!-- 검색결과 표시 -->
-			<div>
+			<div id="sorting">
 				<form class="search-form" action="category.php" method="get">
 					<select id="order" required="required" onchange="javascript:selectEvent(this,'<?=$_GET['query']?>')">
 						<option value="sort" selected>정렬</option>
