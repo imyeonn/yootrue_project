@@ -12,42 +12,63 @@
 			<header id="header">
 				<!-- 프로필사진 -->
 				<span class="profile">
-					<img src="images/profile.jpg" alt="{{ site.url  }}/category" />
+					<a href="category.html"><img src="images/profile.jpg" alt="{{ site.url  }}/category" /></a>
 					<!-- 검색창 -->
 					<div class="search">
 						<form class="search-form" action="search.php" method="get">
+							<?php
+								if(isset($_GET['query'])){
+							?>
+							<input type="text" name="query" placeholder="<?=$_GET['query']?>">
+							<?php
+								;}else{
+									?>
+								
 							<input type="text" name="query" placeholder="제품을 검색하세요!">
+							<?php
+							;}
+							?>
 							<input type="submit" value="search">
 						</form>
 					</div>
 				</span>
 				<!-- 카테고리/플레이리스트 분류 -->
 				<ul class="link">
-					<li><a href="{{ site.url }}/category" class="category"><span class="label">카테고리</span></a></li>
-					<li><a href="{{ site.url }}/playlist" class="playlist"><span class="label">플레이리스트</span></a></li>
+					<li><a href="category.html" class="category"><span class="label">카테고리</span></a></li>
+					<li><a href="playlist.php" class="playlist"><span class="label">플레이리스트</span></a></li>
 				</ul>
 			</header>
 
 			<div class="blank">
 			</div>
-
+			<div>
+				<form class="search-form" action="search.php" method="get">
+					<select id="order" required="required" onchange="javascript:selectEvent(this,'<?=$_GET['query']?>')">
+						<option value="sort" selected>정렬</option>
+						<option value="order">가나다순</option>
+						<option value="latest">최신순</option>	
+					</select>
+					<input type="hidden" name="order">
+					<input type="hidden" name="query">
+				</form>
+			</div>
 			<!-- 검색결과 표시 -->
 			<article id="searchresult">
 					<!-- 제품리스트 출력 -->
 					<?php
 						include 'functions.php';
-							$functions=new Functions();
-				      $query=$_GET['query'];
-				      $position = 0;
-			      	$arrays=$functions->searchProducts($query);
-				      //var_dump($arrays);
-			        foreach($arrays as $array){
-				        $productinfo = $array[0];
-				        $productnames = $productinfo[0];
-				        $productname = $productnames[0];
-				        $productimage = $productnames[1];
-				        $counts = $array[1];
-				        $count = $counts[0];
+						$functions=new Functions();
+				        $query=$_GET['query'];
+				        $position = 0;
+			      		$arrays=$functions->searchProducts($query);
+				        //var_dump($arrays);
+			         	foreach($arrays as $array){
+				          $productinfo = $array[0];
+				          $productnames = $productinfo[0];
+				          $productname = $productnames[0];
+				          $productimage = $productnames[1];
+				          $counts = $array[1];
+				          $count = $counts[0];
      			?>
 					<div class="productbox">
 						<span class="imagebox"><img src=<?=$productimage?> onERROR="this.src='images/alt_productimage.png'" /></span>
@@ -121,6 +142,22 @@
 		  else if(wrappers[position].className=="target wrapper1"){
 		    wrappers[position].className="target wrapper2";
 		  }
+		 }
+		 function selectEvent(selectObj,query){
+		 	var input = document.getElementsByName('order')[0];
+		 	var input2 = document.getElementsByName('query')[1];
+		 	input.value=selectObj.value;
+		 	input2.value=query;
+		 	alert("order = " +input.value + " query = " + input2.value);
+		 	//var url= "./View.do?jubsu_date="+jubsu_date+"&jindan_name="+encodeURI(encodeURIComponent(jindan_name));
+		 	
+		 	var link = "search.php?order="+selectObj.value+"&query="+query;
+		 	var query1 = encodeURIComponent(query);
+		 	var link = "search.php?order="+selectObj.value+"&query="+query1;
+
+		 	location.href=link;
+
+
 		 }
 
 

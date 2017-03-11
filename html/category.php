@@ -12,7 +12,7 @@
 			<header id="header">
 				<!-- 프로필사진 -->
 				<span class="profile">
-					<img src="images/profile.jpg" alt="{{ site.url  }}/category" />
+					<a href="category.html"><img src="images/profile.jpg" alt="{{ site.url  }}/category" /></a>
 					<!-- 검색창 -->
 					<div class="search">
 						<form class="search-form" action="search.php" method="get">
@@ -23,23 +23,92 @@
 				</span>
 				<!-- 카테고리/플레이리스트 분류 -->
 				<ul class="link">
-					<li><a href="index_test.html" class="category"><span class="label">카테고리</span></a></li>
+					<li><a href="category.html" class="category"><span class="label">카테고리</span></a></li>
 					<li><a href="playlist.php" class="playlist"><span class="label">플레이리스트</span></a></li>
 				</ul>
 			</header>
 
 			<div class="blank">
 			</div>
+			<?php
 
+				$query=$_GET['query'];
+				$code= str_replace("'", '', $query);
+			    if($code=='B0101'){
+			?>
+				<div>
+					스킨케어>스킨,미스트
+				</div>
+			<?php
+				;}else if ($code=='B0102'){
+				?>
+				<div>
+					스킨케어>로션,크림,에센스
+				</div>
+			<?php
+				;}else if ($code=='B0103'){
+			?>
+				<div>
+					스킨케어>기타
+				</div>
+			<?php
+				;}else if ($code=='B0201'){
+			?>
+				<div>
+					페이스 메이크업>베이스
+				</div>
+			<?php
+				;}else if ($code=='B0202'){
+			?>
+				<div>
+					페이스 메이크업>컨실러
+				</div>
+			<?php
+				;}else if ($code=='B0203'){
+			?>
+				<div>
+					페이스 메이크업>파운데이션, 파우더
+				</div>
+			<?php
+				;}else if ($code=='B0301'){
+			?>
+				<div>
+					포인트 메이크업>아이, 아이브로우
+				</div>
+			<?php
+				;}else if ($code=='B0302'){
+			?>
+				<div>
+					포인트 메이크업>치크, 하이라이터, 섀딩
+				</div>
+			<?php
+				;}else if ($code=='B0303'){
+			?>
+				<div>
+					포인트 메이크업>립
+				</div>
+				<?php
+						;}?>
 			<!-- 검색결과 표시 -->
+			<div>
+				<form class="search-form" action="category.php" method="get">
+					<select id="order" required="required" onchange="javascript:selectEvent(this,'<?=$_GET['query']?>')">
+						<option value="sort" selected>정렬</option>
+						<option value="order">가나다순</option>
+						<option value="latest">최신순</option>	
+					</select>
+					<input type="hidden" name="order">
+					<input type="hidden" name="query">
+				</form>
+			</div>
 			<article id="searchresult">
 					<!-- 제품리스트 출력 -->
 					<?php
 						include 'functions.php';
 						$functions=new Functions();
-				        $query=$_GET['query'];
-				        $position = 0;
-			      		$arrays=$functions->searchCategory($query);
+						$query=$_GET['query'];
+						$position = 0;
+					    $arrays=$functions->searchCategory($query);	
 				        //var_dump($arrays);
 			         	foreach($arrays as $array){
 				          $productinfo = $array[0];
@@ -62,12 +131,12 @@
 						<!-- 제품별 등장영상 출력 -->
 						<?php
 							$videosss = $array[2];
-	            //print $videossss;
-	            //print '<br>';
-	            $videoss = $videosss[0];
-	            //print $videosss;
-	            //print '<br>';
-	            $videos = $videoss[0];
+				            //print $videossss;
+				            //print '<br>';
+				            $videoss = $videosss[0];
+				            //print $videosss;
+				            //print '<br>';
+				            $videos = $videoss[0];
 						?>
 						<div id="videolist" class = 'target wrapper2'>
 							<ul class="icons">
@@ -80,7 +149,7 @@
 	                	$link=$video[1];
 	              ?>
 
-	              <li><a href=<?=$link?>><span id="listlist" class"list"><?=$title?></span></a></li>
+	              <li><a href=<?=$link?>><span id="listlist" class="list"><?=$title?></span></a></li>
 									<?php
 	                	}
 	                	$position++;
@@ -121,6 +190,14 @@
 		  else if(wrappers[position].className=="target wrapper1"){
 		    wrappers[position].className="target wrapper2";
 		  }
+		 }
+		 function selectEvent(selectObj,query){
+		 	var input = document.getElementsByName('order')[0];
+		 	var input2 = document.getElementsByName('query')[1];
+		 	input.value=selectObj.value;
+		 	input2.value=query;
+		 	var link = "category.php?order="+selectObj.value+"&query="+query;
+		 	location.href=link;
 		 }
 		  
 	  
