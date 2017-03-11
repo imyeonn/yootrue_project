@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>beautu</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/header_test.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</head>
 	<body>
@@ -19,8 +19,8 @@
 				<div class="search">
 					<!-- Ex 3: Modify forms -->
 					<form class="search-form" action="search.php" method="get">
-						<input type="text" name="query" placeholder="제품을 검색하세요!">
-						<input type="submit" value="search">
+						<input class="input" type="text" name="query" placeholder="제품을 검색하세요!">
+						<input class="icon-search" type="submit" value="">
 					</form>
 				</div>
 			</span>
@@ -31,10 +31,8 @@
 			</ul>
 		</header>
 
-	<!-- {% if page.title == "category" %}
-	{% include category.html %}
-	{% else %} -->
 		<div class = "blank"></div>
+
 		<article id="categorylist">
 			<div>
 				<h2 class = 'show' name = "0">
@@ -108,14 +106,14 @@
 		 function changevisible(position){
 		  var wrappers=document.getElementsByClassName('target');
 		  if (wrappers[position].className=="target wrapper2"){
-		    wrappers[position].className="target wrapper1";  
+		    wrappers[position].className="target wrapper1";
 		  }
 		  else if(wrappers[position].className=="target wrapper1"){
 		    wrappers[position].className="target wrapper2";
 		  }
 		 }
-		  
-	  
+
+
 	 	</script>
 	</body>
 </html>
