@@ -163,20 +163,20 @@ body{
   width: 20%;
   height: 65px;
   overflow: hidden;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 
 #searchresult>div.productbox>div.namename{
 display: inline-block;
-  width: 78%;
+  width: 77%;
 
 }
 
 #searchresult>div.productbox>div.namename h2{
-  font-size: 1.1rem;
+  font-size: 1rem;
   color:rgba(0, 0, 0, 0.7);
-  font-weight: 700;
-  line-height: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5rem;
   margin-top: 0.2rem;
   margin-bottom: 0;
   display: inline-block;
@@ -193,7 +193,7 @@ display: inline-block;
 #videolist{
   border: 0.5px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.2);
-  width: 78%;
+  width: 77%;
   padding: 1px 2px 2px 2px;
   float: right;
   margin-bottom: 1rem;
@@ -276,11 +276,18 @@ playlist.php*/
   box-sizing: border-box;
 }
 
+#playlist>div.playbox{
+  display: block;
+  width: 350px;
+  margin-bottom: 1.2rem;
+  float: center;
+  box-sizing: border-box;
+}
 
 #playlist>div.playbox>a>span>img{
   display: inline-block;
   float: left;
-  width: 130px;
+  width: 100%;
   height: auto;
 
 }
@@ -288,17 +295,15 @@ playlist.php*/
 #playlist>div.playbox>a>span.thumbnail{
   display:inline-block;
   float: left;
-  width: 130px;
+  width: 40%;
   height: auto;
   margin: auto;
-  margin-right: 10px;
+  margin-right: 3%;
 }
 
-#playlist>div.playbox{
-  display: block;
-  margin-bottom: 1.2rem;
-  float: center;
-  box-sizing: border-box;
+#playlist>div.playbox>div.namename{
+  display: inline-block;
+  width: 57%;
 }
 
 #playlist>div.playbox>div.namename h2{
@@ -312,7 +317,7 @@ playlist.php*/
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 210px;
+  width: 100%;
 }
 
 #playlist>div.playbox>div.namename ul{
@@ -322,7 +327,7 @@ playlist.php*/
 #productlist{
   border: 0.5px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.1);
-  width: 275px;
+  width: 57%;
   padding: 1px 2px 2px 2px;
   float: right;
   margin-bottom: 1rem;
@@ -337,7 +342,7 @@ playlist.php*/
   color:rgba(0, 0, 0, 0.7);
   font-size: 0.8rem;
   line-height: 1.3rem;
-  width: 300rem;
+  width: 250rem;
   display: inline-block;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -387,7 +392,7 @@ playlist.php*/
 #product{
   display: inline-block;
   padding: 0.2rem;
-  width: 201px;
+  width: 50%;
   height: 1rem;
   display: inline-flex;
   justify-content: center;
