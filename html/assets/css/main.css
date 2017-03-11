@@ -142,20 +142,25 @@ body{
 }
 
 #searchresult>div.productbox>span.imagebox>img{
+  background: url("images/picbackground.png");
+  background-size: cover;
+
   display: inline-block;
   float: left;
   height: 65px;
   weight: 65px;
-  margin: 0 auto;
 
 }
 
 /*이미지 박스 만들어서 이미지칸 고정*/
 #searchresult>div.productbox> span.imagebox{
+  background: url("images/picbackground.png");
+  background-size: cover;
+
   display:inline-block;
   float: left;
   weight: 65px;
-  height: 65px;
+  height: auto;
   margin-right: 10px;
 }
 
