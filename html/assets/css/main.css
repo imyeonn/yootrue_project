@@ -57,7 +57,7 @@ body{
 /*문제부분. 쓸데없는 빈공간있음*/
 #header .profile div{
   margin: 0;
-  border: 1px solid blue;
+  border: 2px solid red;
 }
 
 
@@ -88,6 +88,9 @@ body{
 
 }
 
+
+
+
 #header ul.link li{
   display: inline-block;
   padding: 20px 0;
@@ -107,6 +110,13 @@ body{
   color:rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
+
+
+
+
+
+
+
 
 #header ul.link li:hover{
   border-bottom: 2px solid #ff006c;
@@ -327,7 +337,7 @@ playlist.php*/
 #productlist{
   border: 0.5px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.1);
-  width: 57%;
+  width: 98%;
   padding: 1px 2px 2px 2px;
   float: right;
   margin-bottom: 1rem;
@@ -391,7 +401,7 @@ playlist.php*/
 
 #product{
   display: inline-block;
-  padding: 0.2rem;
+  padding: 0.23rem 0 0.23rem 0;
   width: 100%;
   height: 1rem;
   display: inline-flex;
@@ -403,7 +413,6 @@ playlist.php*/
   font-weight: 500;
   line-height: 2rem;
   background-color: #ff006c;
-  border: 0.1px solid #ff006c;
   border-radius: 0.2rem;
   cursor: pointer;
 }
@@ -458,7 +467,7 @@ playlist.php*/
 
 
 /*category.html css*/
-/*카테고리에선 카테고리에 분홍효과주고싶은데 안됨*/
+/*카테고리에선 카테고리에 분홍밑줄효과주고싶은데 안됨*/
 #label-live{
   border-bottom: 2px solid #ff006c;
 }
