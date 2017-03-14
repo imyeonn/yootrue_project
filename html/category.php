@@ -47,7 +47,7 @@
 			<?php
 				;}else if ($code=='B0103'){
 			?>
-			<div class="depths">스킨케어 > 에센스, 오일</div>
+			<div class="depths">스킨케어 > 에센스, 세럼, 오일</div>
 			<?php
 				;}else if ($code=='B0104'){
 			?>
