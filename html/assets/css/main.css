@@ -143,6 +143,7 @@ body{
 #sorting {
   float: right;
   margin-bottom: 10px;
+  border: 1px solid red;
 }
 
 #searchresult{
@@ -171,27 +172,27 @@ body{
   display:inline-block;
   float: left;
   width: 20%;
-  height: 65px;
+  height: 70px;
   overflow: hidden;
   margin-right: 3%;
 }
 
 #searchresult>div.productbox>div.namename{
-display: inline-block;
+  display: inline-block;
   width: 77%;
 
 }
 
 #searchresult>div.productbox>div.namename h2{
-  font-size: 1rem;
+  font-size: 100rem;
   color:rgba(0, 0, 0, 0.7);
   font-weight: 600;
   line-height: 1.5rem;
   margin-top: 0.2rem;
   margin-bottom: 0;
   display: inline-block;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  /*text-overflow: ellipsis;*/
+  overflow: auto;
   white-space: nowrap;
   width: 100%;
 }
@@ -324,8 +325,8 @@ playlist.php*/
   margin-top: 0.1rem;
   margin-bottom: 0;
   display: inline-block;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  /*text-overflow: ellipsis;*/
+  overflow: auto;
   white-space: nowrap;
   width: 100%;
 }

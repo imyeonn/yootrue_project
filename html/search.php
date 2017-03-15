@@ -65,20 +65,26 @@
 						$functions=new Functions();
 				        $query=$_GET['query'];
 				        $position = 0;
-			      		$arrays=$functions->searchProducts($query);
+			      		print $query;
+			      		if ($query==""){
+			      			print "제품 결과가 없습니다";
+			      		}
+			      		else{
 				        //var_dump($arrays);
+			      			$arrays=$functions->searchProducts($query);
 			         	foreach($arrays as $array){
 				          $productinfo = $array[0];
 				          $productnames = $productinfo[0];
 				          $productname = $productnames[0];
 				          $productimage = $productnames[1];
+				          $productlink = $productnames[2];
 				          $counts = $array[1];
 				          $count = $counts[0];
      			?>
 					<div class="productbox">
-						<span class="imagebox"><img src=<?=$productimage?> onERROR="this.src='images/alt_productimage.png'" /></span>
+						<a href=<?=$productlink?>><span class="imagebox"><img src=<?=$productimage?> onERROR="this.src='images/alt_productimage.png'" /></span></a>
 						<div class="namename">
-							<h2><?=$productname?></h2>
+							<a href=<?=$productlink?>><h2><?=$productname?></h2></a>
 	            <ul>
 								<li id="count"><span><?="$count"?>회 등장</span></li>
 	              <li id="video" class = "show" name =<?="$position"?>><span>등장 영상 보기</span></li>
@@ -104,9 +110,10 @@
 		                //$video = $videos[0];//videos : 제목
 		                $title=$video[0];
 	                	$link=$video[1];
+	                	$date=$video[2];
 	              ?>
 
-	              <li><a href=<?=$link?>><span id="listlist" class"list"><?=$title?></span></a></li>
+	              <li><a href=<?=$link?>><span id="listlist" class"list"><?=$date?> | <?=$title?></span></a></li>
 									<?php
 	                	}
 	                	$position++;
@@ -119,7 +126,8 @@
 						?>
 					</div>
 				<?php
-	       	}
+	       		}
+	       	}	
 	      ?>
 			</article>
 
@@ -156,7 +164,7 @@
 		 	var input2 = document.getElementsByName('query')[1];
 		 	input.value=selectObj.value;
 		 	input2.value=query;
-		 	alert("order = " +input.value + " query = " + input2.value);
+		 	//alert("order = " +input.value + " query = " + input2.value);
 		 	//var url= "./View.do?jubsu_date="+jubsu_date+"&jindan_name="+encodeURI(encodeURIComponent(jindan_name));
 
 		 	var link = "search.php?order="+selectObj.value+"&query="+query;
