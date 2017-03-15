@@ -122,7 +122,7 @@ body{
 }
 
 #header ul.link li a{
-  color:rgba(0, 0, 0, 0.8);
+  color:rgba(0, 0, 0, 0.6);
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -169,7 +169,7 @@ body{
   margin-top: 5px;
 }
 
-#sorting {
+#sorting>form>select{
   width: 100px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -178,20 +178,24 @@ body{
   /*text-decoration: none;*/
   font-size: 13px;
   font-weight: 300;
+  border-radius: 3%;
+  background-color: #fff;
+
 }
 
 
 
 
 #searchresult{
-  margin: 5%;
+  margin: 5px;
   display: block;
   box-sizing: border-box;
+  /*width: 90%;*/
 }
 
 #searchresult>div.productbox{
   display: block;
-  width: 90%;
+  width: 350px;
   margin-bottom: 1.2rem;
   float: center;
   box-sizing: border-box;
@@ -199,40 +203,45 @@ body{
 
 /*이미지 박스 만들어서 이미지칸 고정*/
 
-#searchresult>div.productbox>a{
+/*#searchresult>div.productbox>a{
   width: 20%;
   height: 70px;
+}*/
 
-}
-
-#searchresult>div.productbox>span.imagebox{
+#searchresult>div.productbox>a>span.imagebox{
   display:inline-block;
   float: left;
-  width: 100%;
+  width: 20%;
   height: 70px;
   overflow: hidden;
   margin-right: 3%;
 }
 
 
-#searchresult>div.productbox>span.imagebox>img{
+#searchresult>div.productbox>a>span.imagebox>img{
   display: inline-block;
   float: left;
-  height: 100%;
-  width: 20%;
+  /*height: 100%;*/
+  width: 100%;
 }
 
 
 #searchresult>div.productbox>div.namename{
-  display: inline-flex;
+  display: inline-block;
   width: 77%;
-  height: 78%;
+  /*height: 78%;*/
   justify-content: center;
   align-items: center;
+  padding-top: 8px;
 
 }
 
-#searchresult>div.productbox>div.namename h2{
+/*#searchresult>div.productbox>div.namename>a{
+  display: inline-block;
+  width: 100%;
+}*/
+
+#searchresult>div.productbox>div.namename>a> h2{
   font-size: 1rem;
   color:rgba(0, 0, 0, 0.7);
   font-weight: 500;
@@ -247,14 +256,18 @@ body{
 }
 
 #searchresult>div.productbox>div.namename ul{
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
+  /*display: inline-block;
+  width: 100%;*/
+  margin: 0;
+  padding: 0;
 }
 
 #videolist{
   border: 0.5px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.2);
   width: 77%;
-  padding: 1px 2px 2px 2px;
+  padding: 0 2px 0 2px;
   float: right;
   margin-bottom: 1rem;
 }
@@ -266,8 +279,9 @@ body{
 #videolist>ul.icons>li>a{
   text-decoration: none;
   color:rgba(0, 0, 0, 0.7);
-  font-size: 0.8rem;
-  line-height: 1.3rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: 400;
   width: 250rem;
   display: inline-block;
   text-overflow: ellipsis;
@@ -287,9 +301,9 @@ body{
 
 #count{
   display: inline-block;
-  padding: 0.2rem;
+  /*padding: 0.2rem;*/
   width: 30%;
-  height: 1rem;
+  height: 21px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -297,25 +311,27 @@ body{
   font-size: 0.8rem;
   color:rgba(0, 0, 0, 0.6);
   font-weight: 400;
-  line-height: 2rem;
-  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  /*line-height: 2rem;*/
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
 }
 
 #video{
   display: inline-block;
-  padding: 0.2rem;
-  width: 63%;
-  height: 1rem;
+  /*padding: 0.2rem;*/
+  width: 62%;
+  height: 21px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
   font-size: 0.8rem;
   color:rgba(255, 255, 255, 0.9);
-  font-weight: 500;
-  line-height: 2rem;
+  font-weight: 400;
+  /*line-height: 2rem;*/
   background-color: #e6c4ff;
+  border: 0.1px solid #e6c4ff;
+
   border-radius: 0.2rem;
   cursor: pointer;
 }
@@ -539,7 +555,7 @@ playlist.php*/
   text-align: center;
   font-size: 1.1rem;
   color:rgba(0, 0, 0, 0.8);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 2.1rem;
 }
 
@@ -613,7 +629,7 @@ playlist.php*/
   align-items: center;
   font-size: 1.1rem;
   color:rgba(0, 0, 0, 0.7);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 2.1rem;
   display: inline-flex;
   float: left;

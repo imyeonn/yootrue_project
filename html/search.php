@@ -14,7 +14,7 @@
 				<span class="profile">
 					<a href="category.html"><img src="images/profile.jpg" alt="{{ site.url  }}/category" /></a>
 					<!-- 검색창 -->
-					<div id="search">
+					<div class="search">
 						<form class="search-form" action="search.php" method="get">
 							<?php
 								if(isset($_GET['query'])){
