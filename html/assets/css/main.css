@@ -142,21 +142,21 @@ body{
 4. #e6c4ff*/
 
 #header ul.link li:hover{
-  border-bottom: 2px solid #ffdd62;
-  color:#ffdd62;
+  border-bottom: 2px solid #e6c4ff;
+  color:#e6c4ff;
 }
 
 #header ul.link li a:hover{
-  color:#ffdd62;
+  color:#e6c4ff;
 }
 
 #header ul.link li:active{
-  border-bottom: 2px solid #ffdd62;
-  color:#ffdd62;
+  border-bottom: 2px solid #e6c4ff;
+  color:#e6c4ff;
 }
 
 #header ul.link li a:active{
-  color:#ffdd62;
+  color:#e6c4ff;
 }
 
 #wrapper>div.blank {
@@ -166,39 +166,62 @@ body{
 #sorting {
   float: right;
   margin-bottom: 10px;
-  border: 1px solid red;
+  margin-top: 5px;
 }
 
+#sorting {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  /*line-height: 31px;*/
+  color: #777;
+  /*text-decoration: none;*/
+  font-size: 13px;
+  font-weight: 300;
+}
+
+
+
+
 #searchresult{
-  margin: 5px;
+  margin: 5%;
   display: block;
   box-sizing: border-box;
 }
 
 #searchresult>div.productbox{
   display: block;
-  width: 350px;
+  width: 90%;
   margin-bottom: 1.2rem;
   float: center;
   box-sizing: border-box;
 }
 
-#searchresult>div.productbox>span.imagebox>img{
-  display: inline-block;
-  float: left;
-  height: 100%;
-  width: 100%;
+/*이미지 박스 만들어서 이미지칸 고정*/
+
+#searchresult>div.productbox>a{
+  width: 20%;
+  height: 70px;
+
 }
 
-/*이미지 박스 만들어서 이미지칸 고정*/
-#searchresult>div.productbox> span.imagebox{
+#searchresult>div.productbox>span.imagebox{
   display:inline-block;
   float: left;
-  width: 20%;
+  width: 100%;
   height: 70px;
   overflow: hidden;
   margin-right: 3%;
 }
+
+
+#searchresult>div.productbox>span.imagebox>img{
+  display: inline-block;
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+
 
 #searchresult>div.productbox>div.namename{
   display: inline-flex;
@@ -255,11 +278,11 @@ body{
 }
 
 #videolist>ul.icons>li>a:hover{
-    color:#ffdd62;
+    color:#e6c4ff;
 }
 
 #videolist>ul.icons>li>a:active{
-    color:#ffdd62;
+    color:#e6c4ff;
 }
 
 #count{
@@ -292,7 +315,7 @@ body{
   color:rgba(255, 255, 255, 0.9);
   font-weight: 500;
   line-height: 2rem;
-  background-color: #ffdd62;
+  background-color: #e6c4ff;
   border-radius: 0.2rem;
   cursor: pointer;
 }
@@ -398,11 +421,11 @@ playlist.php*/
 }
 
 #productlist>ul.icons>li>a:hover{
-    color:#ffdd62;
+    color:#e6c4ff;
 }
 
 #productlist>ul.icons>li>a:active{
-    color:#ffdd62;
+    color:#e6c4ff;
 }
 
 #date{
@@ -447,7 +470,7 @@ playlist.php*/
   color:rgba(255, 255, 255, 0.9);
   font-weight: 500;
   line-height: 2rem;
-  background-color: #ffdd62;
+  background-color: #e6c4ff;
   border-radius: 0.2rem;
   cursor: pointer;
 }
@@ -504,11 +527,11 @@ playlist.php*/
 /*category.html css*/
 /*카테고리에선 카테고리에 분홍밑줄효과주고싶은데 안됨*/
 #label-live{
-  border-bottom: 2px solid #ffdd62;
+  border-bottom: 2px solid #e6c4ff;
 }
 
 #label-live a{
-  color:#ffdd62;
+  color:#e6c4ff;
 }
 
 #categorylist h2.show {
@@ -550,11 +573,11 @@ playlist.php*/
 }
 
 #categorylist h2:hover{
-  color:#ffdd62;
+  color:#e6c4ff;
 }
 
 #categorylist h3:hover{
-  color:#ffdd62;
+  color:#e6c4ff;
 }
 
 
