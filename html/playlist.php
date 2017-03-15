@@ -55,10 +55,10 @@
 						<option value="sort" selected>정렬</option>
 						<option value="order">가나다순</option>
 						<option value="latest">최신순</option>
-							<?php	
+							<?php
 							;}
 							?>
-							
+
 					</select>
 					<input type="hidden" name="order">
 				</form>
@@ -129,7 +129,7 @@
 			</div>
 
 			<footer id="footer">
-				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
+				<a href="mailto:imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
 				<p>&copy; Beautu. All rights reserved.</p>
 			</footer>
 		</div>

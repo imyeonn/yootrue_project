@@ -80,7 +80,7 @@
 			<?php
 				;}else if ($code=='B0302'){
 			?>
-			<div class="depths">포인트 메이크업 > 아이섀도우</div>
+			<div class="depths">포인트 메이크업 > 아이베이스, 섀도우</div>
 			<?php
 				;}else if ($code=='B0303'){
 			?>
@@ -197,7 +197,7 @@
 			<div id="forline"></div>
 
 			<footer id="footer">
-				<a href="imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
+				<a href="mailto:imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
 				<p>&copy; Beautu. All rights reserved.</p>
 			</footer>
 		</div>
