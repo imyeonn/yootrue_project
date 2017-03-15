@@ -108,12 +108,11 @@ body{
 
 
 #header ul.link li{
-  display: inline-block;
-  padding: 20px 0;
+  /*padding: 20px 0;*/
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 50%;
-  height: 2rem;
+  height: 70px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +126,10 @@ body{
   text-decoration: none;
   width: 100%;
   height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
@@ -196,17 +199,20 @@ body{
 }
 
 #searchresult>div.productbox>div.namename{
-  display: inline-block;
+  display: inline-flex;
   width: 77%;
+  height: 78%;
+  justify-content: center;
+  align-items: center;
 
 }
 
 #searchresult>div.productbox>div.namename h2{
-  font-size: 100rem;
+  font-size: 1rem;
   color:rgba(0, 0, 0, 0.7);
-  font-weight: 600;
-  line-height: 1.5rem;
-  margin-top: 0.2rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  margin-top: 0rem;
   margin-bottom: 0;
   display: inline-block;
   /*text-overflow: ellipsis;*/
@@ -265,7 +271,7 @@ body{
 
   font-size: 0.8rem;
   color:rgba(0, 0, 0, 0.6);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2rem;
   border: 0.1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.2rem;
@@ -330,17 +336,23 @@ playlist.php*/
   margin-right: 3%;
 }
 
+
+
 #playlist>div.playbox>div.namename{
   display: inline-block;
   width: 57%;
+  height: 78%;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #playlist>div.playbox>div.namename h2{
   font-size: 1rem;
   color:rgba(0, 0, 0, 0.7);
-  font-weight: 600;
-  line-height: 1.5rem;
-  margin-top: 0.1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin-top: 0rem;
   margin-bottom: 0;
   display: inline-block;
   /*text-overflow: ellipsis;*/
@@ -349,8 +361,11 @@ playlist.php*/
   width: 100%;
 }
 
+
 #playlist>div.playbox>div.namename ul{
-  margin-bottom: 0.1rem;
+  /*margin-bottom: 0.1rem;*/
+  margin: 0;
+  padding: 0;
 }
 
 #productlist{
@@ -398,23 +413,22 @@ playlist.php*/
   border-right: 0.1px solid rgba(0, 0, 0, 0.2);
   font-size: 0.8rem;
   color:rgba(0, 0, 0, 0.6);
-  font-weight: 500;
-  line-height: 2rem;
+  font-weight: 400;
+  /*line-height: 2rem;*/
   /*border: 0.1px solid rgba(0, 0, 0, 0.2);*/
 }
 
 #runtime{
   display: inline-block;
   width: 50px;
-  height: 10px;
+  /*height: 10px;*/
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   font-size: 0.8rem;
   color:rgba(0, 0, 0, 0.6);
-  font-weight: 500;
-  line-height: 2rem;
+  font-weight: 400;
+  /*line-height: 2rem;*/
   /*border: 0.1px solid rgba(0, 0, 0, 0.2);*/
 }
 
