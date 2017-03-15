@@ -17,7 +17,7 @@
 					<div class="search">
 						<form class="search-form" action="search.php" method="get">
 							<input class="input" type="text" name="query" placeholder="제품을 검색하세요!">
-							<input class="icon-search" type="submit" value="">
+							<input class="icon-search" type="image" src="images/search.jpg" value="">
 						</form>
 					</div>
 				</span>
@@ -47,7 +47,7 @@
 			<?php
 				;}else if ($code=='B0103'){
 			?>
-			<div class="depths">스킨케어 > 에센스, 세럼, 오일</div>
+			<div class="depths">스킨케어 > 에센스, 오일</div>
 			<?php
 				;}else if ($code=='B0104'){
 			?>
@@ -141,13 +141,14 @@
 				          $productnames = $productinfo[0];
 				          $productname = $productnames[0];
 				          $productimage = $productnames[1];
+				          $productlink = $productnames[2];
 				          $counts = $array[1];
 				          $count = $counts[0];
      			?>
 					<div class="productbox">
-						<span class="imagebox"><img src=<?=$productimage?> alt="product image"/></span>
+						<a href=<?=$productlink?>><span class="imagebox"><img src=<?=$productimage?> alt="product image"/></span></a>
 						<div class="namename">
-							<h2><?=$productname?></h2>
+							<a href=<?=$productlink?>><h2><?=$productname?></h2></a>
 	            <ul>
 								<li id="count"><span><?="$count"?>회 등장</span></li>
 	              <li id="video" class = "show" name =<?="$position"?>><span>등장 영상 보기</span></li>
@@ -173,9 +174,10 @@
 		                //$video = $videos[0];//videos : 제목
 		                $title=$video[0];
 	                	$link=$video[1];
+	                	$date=$video[2];
 	              ?>
 
-	              <li><a href=<?=$link?>><span id="listlist" class="list"><?=$title?></span></a></li>
+	              <li><a href=<?=$link?>><span id="listlist" class="list"><?=$date?> | <?=$title?></span></a></li>
 									<?php
 	                	}
 	                	$position++;

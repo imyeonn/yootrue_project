@@ -28,7 +28,7 @@
 							<?php
 							;}
 							?>
-							<input class="icon-search" type="submit" value="">
+							<input class="icon-search" type="image" src="images/search.jpg" value="">
 						</form>
 					</div>
 				</span>
@@ -65,7 +65,6 @@
 						$functions=new Functions();
 				        $query=$_GET['query'];
 				        $position = 0;
-			      		print $query;
 			      		if ($query==""){
 			      			print "제품 결과가 없습니다";
 			      		}

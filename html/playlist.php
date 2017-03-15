@@ -17,7 +17,7 @@
 					<div id="search">
 						<form class="search-form" action="search.php" method="get">
 							<input class="input" type="text" name="query" placeholder="제품을 검색하세요!">
-							<input class="icon-search" type="submit" value="">
+							<input class="icon-search" type="image" src="images/search.jpg" value="">
 						</form>
 					</div>
 				</span>
@@ -35,9 +35,30 @@
 			<div id="sorting">
 				<form class="search-form" action="playlist.php" method="get">
 					<select id="order" required="required" onchange="javascript:selectEvent(this)">
+						<?php
+							$sort=$_GET['order'];
+							if($sort=="order"){
+						?>
+						<option value="sort">정렬</option>
+						<option value="order" selected>가나다순</option>
+						<option value="latest">최신순</option>
+						<?php
+							;}else if ($sort=="latest"){
+
+							 ?>
+						<option value="sort" >정렬</option>
+						<option value="order">가나다순</option>
+						<option value="latest" selected>최신순</option>
+						<?php
+							;}else{
+							?>
 						<option value="sort" selected>정렬</option>
 						<option value="order">가나다순</option>
 						<option value="latest">최신순</option>
+							<?php	
+							;}
+							?>
+							
 					</select>
 					<input type="hidden" name="order">
 				</form>
