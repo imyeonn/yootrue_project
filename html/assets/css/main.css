@@ -176,7 +176,7 @@ body{
   /*line-height: 31px;*/
   color: #777;
   /*text-decoration: none;*/
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   border-radius: 3%;
   background-color: #fff;
@@ -302,7 +302,7 @@ body{
 #count{
   display: inline-block;
   /*padding: 0.2rem;*/
-  width: 30%;
+  width: 32%;
   height: 21px;
   display: inline-flex;
   justify-content: center;
@@ -319,7 +319,7 @@ body{
 #video{
   display: inline-block;
   /*padding: 0.2rem;*/
-  width: 62%;
+  width: 65%;
   height: 21px;
   display: inline-flex;
   justify-content: center;
@@ -489,6 +489,14 @@ playlist.php*/
   background-color: #e6c4ff;
   border-radius: 0.2rem;
   cursor: pointer;
+}
+
+#product>span{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
