@@ -17,8 +17,8 @@ li {
 
 body{
   /*background-image: url(../../images/crop.jpg);*/
-  background-color: #fafafa;
-  background-size:cover;
+  /*background-color: #fafafa;*/
+  background-size: cover;
   font-family: 'Noto Sans KR', sans-serif;
   /*font-size: 62.5%;*/
   margin: 0;
@@ -26,16 +26,16 @@ body{
 
 #wrapper{
   margin: 0 auto;
-  padding: 10px 20px;
+  /*padding: 0 20px;*/
   width: 97%;
   height: 100%;
   max-width: 360px;
   margin-top: 20px;
-  background-color: white;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);;
+  /*background-color: white;*/
+  /*box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);;*/
 
-  @media(max-width: 400px){
-    width: 88%
+  @media(max-width: 360px){
+    width: 88%;
   }
 }
 
@@ -207,9 +207,12 @@ body{
 }
 
 #sorting>form>select{
+  -webkit-appearance: none;
   width: 100px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 10px;
+
   /*line-height: 31px;*/
   color: #777;
   /*text-decoration: none;*/
@@ -218,6 +221,20 @@ body{
   border-radius: 3%;
   background-color: #fff;
 
+}
+
+#sorting>form>select:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  border-left: 5px
+  solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
 }
 
 
@@ -310,7 +327,7 @@ body{
   font-size: 1rem;
   color:rgba(0, 0, 0, 0.7);
   font-weight: 500;
-  line-height: 1.2rem;
+  /*line-height: 1.2rem;*/
   margin-top: 0rem;
   margin-bottom: 0;
   display: inline-block;
@@ -330,7 +347,7 @@ body{
 
 #videolist{
   border: 1px solid rgba(239, 238, 238, 0.4);
-  background-color: rgba(239, 238, 238, 0.2);
+  background-color: #fafafa;
   width: 77%;
   padding: 0 2px 0 2px;
   float: right;
@@ -339,6 +356,8 @@ body{
 
 #videolist>ul.icons{
   display: inline-block;
+  padding-left: 5px;
+  padding-top: 3px;
 }
 
 #videolist>ul.icons>li>a{
@@ -457,7 +476,7 @@ playlist.php*/
   font-size: 1rem;
   color:rgba(0, 0, 0, 0.7);
   font-weight: 500;
-  line-height: 1rem;
+  /*line-height: 1rem;*/
   margin-top: 0rem;
   margin-bottom: 0;
   display: inline-block;
@@ -479,15 +498,18 @@ display:none;
 
 #productlist{
   border: 1px solid rgba(239, 238, 238, 0.4);
-  /*background-color: rgba(239, 238, 238, 0.1);*/
+  background-color: #fafafa;
   width: 98%;
-  padding: 1px 2px 2px 2px;
+  padding: 0px 2px 0px 2px;
   float: right;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 #productlist>ul.icons{
   display: inline-block;
+  padding-left: 5px;
+  padding-top: 3px;
 }
 
 #productlist>ul.icons>li>a{
