@@ -159,24 +159,25 @@ body{
 1. #ff006c
 2. #ffdd62
 3. #ffcd2f
-4. #e6c4ff*/
+4. #e6c4ff
+5. #fc7fb6*/
 
 #header ul.link li:hover{
-  border-bottom: 2px solid #e6c4ff;
-  color:#e6c4ff;
+  border-bottom: 2px solid #fc7fb6;
+  color:#fc7fb6;
 }
 
 #header ul.link li a:hover{
-  color:#e6c4ff;
+  color:#fc7fb6;
 }
 
 #header ul.link li:active{
-  border-bottom: 2px solid #e6c4ff;
-  color:#e6c4ff;
+  border-bottom: 2px solid #fc7fb6;
+  color:#fc7fb6;
 }
 
 #header ul.link li a:active{
-  color:#e6c4ff;
+  color:#fc7fb6;
 }
 
 #wrapper>div.blank {
@@ -191,12 +192,12 @@ body{
 #header #label-live{
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #e6c4ff;
+  border-bottom: 2px solid #fc7fb6;
 }
 
 #header #label-live a{
   text-decoration: none;
-  color:#e6c4ff;
+  color:#fc7fb6;
 }
 
 
@@ -376,11 +377,11 @@ body{
 }
 
 #videolist>ul.icons>li>a:hover{
-    color:#e6c4ff;
+    color:#fc7fb6;
 }
 
 #videolist>ul.icons>li>a:active{
-    color:#e6c4ff;
+    color:#fc7fb6;
 }
 
 #count{
@@ -413,8 +414,8 @@ body{
   color:rgba(255, 255, 255, 0.9);
   font-weight: 400;
   /*line-height: 2rem;*/
-  background-color: #e6c4ff;
-  border: 0.1px solid #e6c4ff;
+  background-color: #fc7fb6;
+  border: 0.1px solid #fc7fb6;
 
   border-radius: 0.2rem;
   cursor: pointer;
@@ -527,11 +528,11 @@ display:none;
 }
 
 #productlist>ul.icons>li>a:hover{
-    color:#e6c4ff;
+    color:#fc7fb6;
 }
 
 #productlist>ul.icons>li>a:active{
-    color:#e6c4ff;
+    color:#fc7fb6;
 }
 
 #date{
@@ -576,7 +577,7 @@ display:none;
   color:rgba(255, 255, 255, 0.9);
   font-weight: 400;
   line-height: 2rem;
-  background-color: #e6c4ff;
+  background-color: #fc7fb6;
   border-radius: 0.2rem;
   cursor: pointer;
 }
@@ -645,11 +646,11 @@ display:none;
 /*category.html css*/
 /*카테고리에선 카테고리에 분홍밑줄효과주고싶은데 안됨*/
 #label-live{
-  border-bottom: 2px solid #e6c4ff;
+  border-bottom: 2px solid #fc7fb6;
 }
 
 #label-live a{
-  color:#e6c4ff;
+  color:#fc7fb6;
 }
 
 #categorylist h2.show {
@@ -691,11 +692,11 @@ display:none;
 }
 
 #categorylist h2:hover{
-  color:#e6c4ff;
+  color:#fc7fb6;
 }
 
 #categorylist h3:hover{
-  color:#e6c4ff;
+  color:#fc7fb6;
 }
 
 

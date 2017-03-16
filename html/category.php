@@ -153,8 +153,7 @@
 				          $productname = $productnames[0];
 				          $productimage = $productnames[1];
 				          $productlink = $productnames[2];
-				          $counts = $array[1];
-				          $count = $counts[0];
+				          $productcount = $productnames[3];
      			?>
 					<div class="productbox">
 						<a href=<?=$productlink?>><span class="imagebox">
@@ -167,14 +166,14 @@
 						<div class="namename">
 						<a href=<?=$productlink?>><h2 -ms-overflow-style: none;><?=$productname?></h2></a>
 	           <ul>
-							<li id="count"><span><?="$count"?>회 등장</span></li>
+							<li id="count"><span><?="$productcount"?>회 등장</span></li>
 	             <li id="video" class = "show" name =<?="$position"?>><span>등장 영상 보기</span></li>
 	           </ul>
 					</div>
 
 						<!-- 제품별 등장영상 출력 -->
 						<?php
-							$videosss = $array[2];
+							$videosss = $array[1];
 				            //print $videossss;
 				            //print '<br>';
 				            $videoss = $videosss[0];
