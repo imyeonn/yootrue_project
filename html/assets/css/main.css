@@ -211,7 +211,8 @@ body{
 }*/
 
 #searchresult>div.productbox>a>span.imagebox{
-  display:inline-block;
+  display:inline-flex;
+  
   float: left;
   width: 20%;
   /*height: 70px;*/
@@ -221,19 +222,22 @@ body{
 
 #searchresult>div.productbox>a>span.imagebox>span.imgbox{
   position: relative;
-  padding-top: 100%;
+  /*padding-top: 100%;*/
   overflow: hidden;
+  margin: auto;
+  float: left;
+  display: inline-block;
 }
 #searchresult>div.productbox>a>span.imagebox>span.imgbox>img{
   display: inline-block;
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   max-width: 100%;
   height: auto;
-
+  max-height: 70px;
   float: left;
 }
 
