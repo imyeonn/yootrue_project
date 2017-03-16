@@ -75,7 +75,7 @@ body{
 #header .profile img{
   border-radius: 100%;
   display: inline-block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   width: 60px;
   height: 60px;
   box-sizing: border-box;
@@ -349,10 +349,11 @@ body{
 #videolist{
   border: 1px solid rgba(239, 238, 238, 0.4);
   background-color: #fafafa;
-  width: 77%;
+  width: 98%;
   padding: 0 2px 0 2px;
   float: right;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 #videolist>ul.icons{
@@ -364,9 +365,9 @@ body{
 #videolist>ul.icons>li>a{
   text-decoration: none;
   color:rgba(0, 0, 0, 0.7);
-  font-size: 0.7rem;
-  line-height: 1rem;
-  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  font-weight: 300;
   /*width: 250rem;*/
   display: inline-block;
   text-overflow: ellipsis;
