@@ -34,7 +34,7 @@
 				<!-- 카테고리/플레이리스트 분류 -->
 				<ul class="link">
 					<li><a href="category.html" class="category"><span class="label">카테고리</span></a></li>
-					<li><a href="playlist.php" class="playlist"><span class="label">플레이리스트</span></a></li>
+					<li id="label-live"><a href="playlist.php" class="playlist"><span class="label">플레이리스트</span></a></li>
 				</ul>
 			</header>
 
@@ -131,8 +131,8 @@
 						$position++;
 						}
 					?>
-					</ul>
-				</div>
+					<!-- </ul>
+				</div> -->
 			</article>
 
 			<div class="blank"></div>
@@ -160,9 +160,9 @@
 		 function changevisible(position){
 		  var wrappers=document.getElementsByClassName('target');
 		  if (wrappers[position].className=="target wrapper2"){
-		    wrappers[position].className="target wrapper1";
+		    wrappers[position].className="target wrapper4";
 		  }
-		  else if(wrappers[position].className=="target wrapper1"){
+		  else if(wrappers[position].className=="target wrapper4"){
 		    wrappers[position].className="target wrapper2";
 		  }
 		 }
