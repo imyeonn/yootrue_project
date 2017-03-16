@@ -3,6 +3,8 @@
 /*스크롤바 사라지기*/
 html {scrollbar-3dLight-Color: rgba(255, 255, 255, 0); scrollbar-arrow-color: #fff; scrollbar-base-color: #fff; scrollbar-Face-Color: #fff; scrollbar-Track-Color: #fff; scrollbar-DarkShadow-Color: #fff; scrollbar-Highlight-Color: #fff; scrollbar-Shadow-Color: #fff}
 
+
+
 ul {
   padding-left: 0;
   margin: 0;
@@ -14,7 +16,8 @@ li {
 }
 
 body{
-  background-image: url(../../images/crop.jpg);
+  /*background-image: url(../../images/crop.jpg);*/
+  background-color: #fafafa;
   background-size:cover;
   font-family: 'Noto Sans KR', sans-serif;
   /*font-size: 62.5%;*/
@@ -23,10 +26,13 @@ body{
 
 #wrapper{
   margin: 0 auto;
+  padding: 10px 20px;
   width: 97%;
   height: 100%;
   max-width: 360px;
   margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);;
 
   @media(max-width: 400px){
     width: 88%
@@ -37,7 +43,7 @@ body{
   text-align: center;
   padding-bottom: 1rem;
   width: 100%;
-  height: 160px;
+  height: 172px;
 }
 
 #header .profile {
@@ -69,9 +75,9 @@ body{
 #header .profile img{
   border-radius: 100%;
   display: inline-block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 65px;
-  height: 65px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 60px;
   box-sizing: border-box;
 }
 
@@ -89,7 +95,7 @@ body{
 }
 
 #header>span>div .input {
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   padding: 0 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 170px;
@@ -112,7 +118,7 @@ body{
 
 #header ul.link{
   box-sizing: border-box;
-  height: 60px;
+  height: 72px;
   width: 360px;
 
 }
@@ -175,6 +181,24 @@ body{
 #wrapper>div.blank {
   clear: both;
 }
+
+
+
+
+
+
+#label-live{
+  border: none;
+  border-bottom: 2px solid #e6c4ff;
+}
+
+#label-live a{
+  text-decoration: none;
+  color:#e6c4ff;
+}
+
+
+
 
 #sorting {
   float: right;
@@ -305,7 +329,7 @@ body{
 }
 
 #videolist{
-  border: 0.5px solid rgba(239, 238, 238, 0.4);
+  border: 1px solid rgba(239, 238, 238, 0.4);
   background-color: rgba(239, 238, 238, 0.2);
   width: 77%;
   padding: 0 2px 0 2px;
@@ -454,8 +478,8 @@ display:none;
 }
 
 #productlist{
-  border: 0.5px solid rgba(239, 238, 238, 0.4);
-  background-color: rgba(239, 238, 238, 0.1);
+  border: 1px solid rgba(239, 238, 238, 0.4);
+  /*background-color: rgba(239, 238, 238, 0.1);*/
   width: 98%;
   padding: 1px 2px 2px 2px;
   float: right;
