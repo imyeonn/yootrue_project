@@ -18,7 +18,7 @@ li {
 body{
   /*background-image: url(../../images/crop.jpg);*/
   /*background-color: #fafafa;*/
-  background-size: cover;
+  background-size:cover;
   font-family: 'Noto Sans KR', sans-serif;
   /*font-size: 62.5%;*/
   margin: 0;
@@ -34,8 +34,8 @@ body{
   /*background-color: white;*/
   /*box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);;*/
 
-  @media(max-width: 360px){
-    width: 88%;
+  @media(max-width: 400px){
+    width: 88%
   }
 }
 
@@ -109,10 +109,10 @@ body{
 
 /*아이콘 넣고싶음*/
 #header>span>div .icon-search {
-  height: 20px;
+  height: 18px;
   cursor: pointer;
   display: inline-flex;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 
@@ -187,12 +187,13 @@ body{
 
 
 
-#label-live{
+#header #label-live{
   border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #e6c4ff;
 }
 
-#label-live a{
+#header #label-live a{
   text-decoration: none;
   color:#e6c4ff;
 }
@@ -212,18 +213,17 @@ body{
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding-left: 10px;
-
   /*line-height: 31px;*/
   color: #777;
   /*text-decoration: none;*/
   font-size: 12px;
   font-weight: 300;
   border-radius: 3%;
-  background-color: #fff;
+  background: url('images/downward.png') no-repeat 95% 50%;
 
 }
 
-#sorting>form>select:before{
+/*#sorting>form>select:before{
   content: "";
   position: absolute;
   top: 50%;
@@ -235,8 +235,7 @@ body{
   solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #333;
-}
-
+}*/
 
 
 
@@ -357,7 +356,7 @@ body{
 #videolist>ul.icons{
   display: inline-block;
   padding-left: 5px;
-  padding-top: 3px;
+  padding-right: 3px;
 }
 
 #videolist>ul.icons>li>a{
@@ -620,7 +619,7 @@ display:none;
   border-top: 0.5px dotted #d3d6db;
   width: 10rem;
   margin: 2rem auto;
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 
@@ -635,6 +634,10 @@ display:none;
 
 .wrapper3 {
   height: auto;
+}
+.wrapper4 {
+  height:9rem;
+  overflow:auto;
 }
 
 
