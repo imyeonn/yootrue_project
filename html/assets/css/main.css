@@ -105,6 +105,7 @@ body{
   align-items: center;
   cursor: text;
   font-size: 13px;
+  -webkit-appearance: none;
 }
 
 /*아이콘 넣고싶음*/
@@ -219,7 +220,7 @@ body{
   font-size: 12px;
   font-weight: 300;
   border-radius: 3%;
-  background: url('https://github.com/imyeonn/yootrue_project/blob/master/html/images/downward7.png?raw=true') no-repeat 91% 50%;
+  background: url('https://github.com/imyeonn/yootrue_project/blob/master/html/images/downward9.png?raw=true') no-repeat 91% 50%;
 
 }
 
