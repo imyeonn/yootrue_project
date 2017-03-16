@@ -89,7 +89,7 @@
 				<div class="playbox">
 					<a href=<?=$link?>><span class="thumbnail"><img src=<?=$thumbnail?> alt="videoimage"/></span></a>
 					<div class="namename">
-						<a href=<?=$link?>><h2><?=$title?></h2></a>
+						<a href=<?=$link?>><h2 -ms-overflow-style: none; ><?=$title?></h2></a>
 						<ul>
 							<li id="date"><span><?=$date?></span></li>
 							<li id="runtime"><span><?=$min?>:<?=$sec?></span></li>

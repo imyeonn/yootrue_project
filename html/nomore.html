@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>beautu</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="fontello/css/fontello.css">
+	</head>
+	<body>
+
+		<div id="wrapper">
+
+		<!-- 유튜버 프로필사진 -->
+		<header id="header">
+			<span class="profile">
+				<a href="category.html"><img src="images/profile.jpg" alt="{{ site.url  }}/category" /></a>
+				<!-- 검색창 -->
+				<div class="search">
+					<!-- Ex 3: Modify forms -->
+					<form class="search-form" action="search.php" method="get">
+						<input class="input" type="text" name="query" placeholder="제품을 검색하세요!">
+						<input class="icon-search" type="image" src="images/search.jpg" value="">
+					</form>
+				</div>
+			</span>
+		<!-- 목룍 -->
+			<ul class="link">
+				<li id="label-live"><a href="category.html" class="category"><span class="label">카테고리</span></a></li>
+				<li><a href="playlist.php" class="playlist"><span class="label">플레이리스트</span></a></li>
+			</ul>
+		</header>
+
+		<div class = "blank"></div>
+
+		<span id="category-depth">
+			<a href="category.html"><div class="back"><img src="images/back.png" /></div></a>
+			<div class="depths-box">
+				<div class="depths"></div>
+			</div>
+		</span>
+
+		<div class="blank"></div>
+
+		<article id="nomore">
+
+			<div>더 이상 판매되지 않는 제품입니다.</div>
+			<div>
+				<img src="images/sad.png" />
+			</div>
+
+		</article>
+
+		<div id="forline"></div>
+
+		<footer id="footer">
+			<a href="mailto:imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
+			<p>&copy; Beautu. All rights reserved.</p>
+		</footer>
+	</div>
+
+	</body>
+</html>

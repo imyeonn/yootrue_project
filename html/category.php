@@ -148,7 +148,7 @@
 					<div class="productbox">
 						<a href=<?=$productlink?>><span class="imagebox"><img src=<?=$productimage?> alt="product image"/></span></a>
 						<div class="namename">
-							<a href=<?=$productlink?>><h2><?=$productname?></h2></a>
+							<a href=<?=$productlink?>><h2 -ms-overflow-style: none;><?=$productname?></h2></a>
 	            <ul>
 								<li id="count"><span><?="$count"?>회 등장</span></li>
 	              <li id="video" class = "show" name =<?="$position"?>><span>등장 영상 보기</span></li>
