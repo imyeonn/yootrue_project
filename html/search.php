@@ -19,7 +19,7 @@
 							<?php
 								if(isset($_GET['query'])){
 							?>
-							<input type="text" name="query" placeholder="<?=$_GET['query']?>">
+							<input class="input" type="text" name="query" placeholder="<?=$_GET['query']?>">
 							<?php
 								;}else{
 									?>
@@ -66,7 +66,7 @@
 				        $query=$_GET['query'];
 				        $position = 0;
 			      		if ($query==""){
-			      			print "";
+			      			print "찾는 제품이 없습니다.";
 			      		}
 			      		else{
 				        //var_dump($arrays);

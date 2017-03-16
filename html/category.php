@@ -146,14 +146,20 @@
 				          $count = $counts[0];
      			?>
 					<div class="productbox">
-						<a href=<?=$productlink?>><span class="imagebox"><img src=<?=$productimage?> alt="product image"/></span></a>
+						<a href=<?=$productlink?>><span class="imagebox">
+							<span class="imgbox">
+								<img src=<?=$productimage?> onERROR="this.src='images/alt_productimage.png'"/>
+							</span>
+						</span></a>
+
+
 						<div class="namename">
-							<a href=<?=$productlink?>><h2 -ms-overflow-style: none;><?=$productname?></h2></a>
-	            <ul>
-								<li id="count"><span><?="$count"?>회 등장</span></li>
-	              <li id="video" class = "show" name =<?="$position"?>><span>등장 영상 보기</span></li>
-	            </ul>
-						</div>
+						<a href=<?=$productlink?>><h2 -ms-overflow-style: none;><?=$productname?></h2></a>
+	           <ul>
+							<li id="count"><span><?="$count"?>회 등장</span></li>
+	             <li id="video" class = "show" name =<?="$position"?>><span>등장 영상 보기</span></li>
+	           </ul>
+					</div>
 
 						<!-- 제품별 등장영상 출력 -->
 						<?php

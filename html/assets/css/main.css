@@ -214,17 +214,27 @@ body{
   display:inline-block;
   float: left;
   width: 20%;
-  height: 70px;
-  overflow: hidden;
+  /*height: 70px;*/
+  /*overflow: hidden;*/
   margin-right: 3%;
 }
 
-
-#searchresult>div.productbox>a>span.imagebox>img{
+#searchresult>div.productbox>a>span.imagebox>span.imgbox{
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+#searchresult>div.productbox>a>span.imagebox>span.imgbox>img{
   display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  height: auto;
+
   float: left;
-  /*height: 100%;*/
-  width: 100%;
 }
 
 
