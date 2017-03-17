@@ -13,7 +13,7 @@
 		</script>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>카테고리</title>
+		<title>뷰투 Beautu</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
@@ -126,11 +126,40 @@
 
 			<!-- 검색결과 표시 -->
 			<div id="sorting">
-				<form class="search-form" action="category.php" method="get">
+				<form class="search-form" action="search.php" method="get">
 					<select id="order" required="required" onchange="javascript:selectEvent(this,'<?=$_GET['query']?>')">
+						<?php
+							$sort=$_GET['order'];
+							if($sort=="order"){
+						?>
+						<option value="sort">정렬</option>
+						<option value="order" selected>가나다순</option>
+						<option value="latest">최신순</option>
+						<option value="popular">등장횟수순</option>
+						<?php
+							;}else if($sort=="latest"){
+						?>
+						<option value="sort" >정렬</option>
+						<option value="order">가나다순</option>
+						<option value="latest" selected>최신순</option>
+						<option value="popular">등장횟수순</option>
+						<?php
+							;}else if($sort=="popular"){
+						?>
+						<option value="sort">정렬</option>
+						<option value="order">가나다순</option>
+						<option value="latest">최신순</option>
+						<option value="popular" selected>등장횟수순</option>
+						<?php
+							;}else{
+						?>
 						<option value="sort" selected>정렬</option>
 						<option value="order">가나다순</option>
 						<option value="latest">최신순</option>
+						<option value="popular">등장횟수순</option>
+						<?php
+							;}
+						?>
 					</select>
 					<input type="hidden" name="order">
 					<input type="hidden" name="query">
@@ -216,7 +245,7 @@
 
 			<footer id="footer">
 				<a href="mailto:imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
-				<p>&copy; Beautu. All rights reserved.</p>
+				<p>by Beautu</p>
 			</footer>
 		</div>
 		<script type="text/javascript">

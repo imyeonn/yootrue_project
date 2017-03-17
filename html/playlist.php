@@ -12,7 +12,7 @@
 
 </script>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>beautu</title>
+		<title>뷰투 Beautu</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="fontello/css/fontello.css">
@@ -142,7 +142,7 @@
 
 			<footer id="footer">
 				<a href="mailto:imyeonn@gmail.com" class="icon-mail"><span class="label">요청사항, 궁금한 점은 여기에 남겨주세요!</span></a>
-				<p>&copy; Beautu. All rights reserved.</p>
+				<p>by Beautu</p>
 			</footer>
 		</div>
 
