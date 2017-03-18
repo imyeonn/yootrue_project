@@ -58,7 +58,7 @@
 			<?php
 				;}else if ($code=='B0103'){
 			?>
-			<div class="depths">스킨케어 > 에센스, 오일</div>
+			<div class="depths">스킨케어 > 에센스, 세럼, 오일</div>
 			<?php
 				;}else if ($code=='B0104'){
 			?>
@@ -111,7 +111,7 @@
 			<?php
 				;}else if ($code=='B0307'){
 			?>
-			<div class="depths">포인트 메이크업 > 립틴트, 라커</div>
+			<div class="depths">포인트 메이크업 > 립틴트, 리퀴드립</div>
 			<?php
 				;}else if ($code=='B0308'){
 			?>
