@@ -34,53 +34,51 @@
             $query = str_replace("\"", '', $query);
             $latest = false;
             $order = false;
+            $popular = false;
         	if(isset($_GET["order"])){
             	if($_GET["order"]=="latest")
             		$latest = true;
             	else if($_GET["order"]=="order")
             		$order = true;
+                else if($_GET["order"]=="popular")
+                    $popular = true;
             	
             }
-            $query1 = "SELECT distinct product_name, product_pics from category where product_name like '%$query%' order by product_name ASC";
+            $query1 = "SELECT distinct product_name, product_pics,product_link, count(product_name) from category where product_name like '%$query%' group by product_name order by product_name ASC";
             if($latest)
-            	$query1 = "SELECT distinct product_name, product_pics from category where product_name like '%$query%' order by date DESC";
+            	$query1 = "SELECT distinct product_name, product_pics,product_link,count(product_name),max(date) from category where product_name like '%$query%' group by product_name order by max(date) DESC";
             else if($order)
-            	$query1 = "SELECT distinct product_name, product_pics from category where product_name like '%$query%' order by product_name ASC";
-
-            	
-            
-			$query1 = "SELECT distinct product_name, product_pics from category where product_name like '%$query%' order by product_name ASC";
+            	$query1 = "SELECT distinct product_name, product_pics,product_link, count(product_name) from category where product_name like '%$query%' group by product_name order by product_name ASC";
+            else if($popular)
+                $query1 = "SELECT distinct product_name, product_pics,product_link, count(product_name) from category where product_name like '%$query%' group by product_name order by count(product_name) DESC";
             $result1= mysql_query($query1);
             $rows1 = mysql_num_rows($result1);
             //$r=mysql_fetch_array($result1); 
             $array0=array();
             for($i=0;$i<$rows1;$i++){
-            	$array1=array();//제품이름,이미지
-				$array2=array();//등장횟수
-				$array3=array();//등장타이틀, 등장링크 총
-				$array4=array();//등장타이틀,등장링크 갯수
-				$array5=array();//등장타이틀,등장링크
+            	$array1=array();//제품이름,이미지,등장횟수
+				$array2=array();//등장타이틀, 등장링크 총
+				$array3=array();//등장타이틀,등장링크 갯수
+				$array4=array();//등장타이틀,등장링크
             	$product_name = mysql_result($result1, $i, 'product_name'); 
             	$product_pics = mysql_result($result1, $i, 'product_pics');
-            	array_push($array1,array($product_name,$product_pics));
-            	$query2 = "SELECT count(product_name) from category where product_name='$product_name'";
-		    	$result2 = mysql_query($query2);
-		    	$temp3 = mysql_result($result2, 0);
-		    	$count=$temp3;
-		    	array_push($array2,$count);
-		    	$query3 = "SELECT title,link from category where product_name='$product_name'";
+                $product_link = mysql_result($result1, $i, 'product_link');
+                $product_count = mysql_result($result1, $i, 'count(product_name)');
+            	array_push($array1,array($product_name,$product_pics,$product_link,$product_count));
+		    	$query3 = "SELECT title,link,date from category where product_name='$product_name'";
 			    $result3 = mysql_query($query3);
 			    $rows2 = mysql_num_rows($result3);
 			    for($j=0;$j<$rows2;$j++){
 			    	$videoname = mysql_result($result3, $j, 'title');
 				    $videolink = mysql_result($result3, $j, 'link');
+                    $videodate = mysql_result($result3, $j, 'date');
 				    $videoname = $videoname;
 			    	$videolink = $videolink;
-				    array_push($array5,array($videoname,$videolink));	
+				    array_push($array4,array($videoname,$videolink,$videodate));	
 			    }
-			    array_push($array4,$array5);
 			    array_push($array3,$array4);
-				array_push($array0,array($array1,$array2,$array3));
+			    array_push($array2,$array3);
+				array_push($array0,array($array1,$array2));
 
             }
             //return $rows;
@@ -116,18 +114,23 @@
             $query = str_replace("'", '', $query);
             $latest = false;
             $order = false;
-        	if(isset($_GET["order"])){
-            	if($_GET["order"]=="latest")
-            		$latest = true;
-            	else if($_GET["order"]=="order")
-            		$order = true;
-            	
+        	$popular = false;
+            if(isset($_GET["order"])){
+                if($_GET["order"]=="latest")
+                    $latest = true;
+                else if($_GET["order"]=="order")
+                    $order = true;
+                else if($_GET["order"]=="popular")
+                    $popular = true;
+                
             }
-            $query1 = "SELECT distinct product_name, product_pics from category where product_code ='$query' order by product_name ASC";
+            $query1 = "SELECT distinct product_name, product_pics,product_link,count(product_name) from category where product_code ='$query' group by product_name order by product_name ASC";
             if($latest)
-            	$query1 = "SELECT distinct product_name, product_pics from category where product_code ='$query' order by date DESC";
+                $query1 = "SELECT distinct product_name, product_pics,product_link,count(product_name),max(date) from category where product_code ='$query' group by product_name order by max(date) DESC";
             else if($order)
-            	$query1 = "SELECT distinct product_name, product_pics from category where product_code ='$query' order by product_name ASC";
+                $query1 = "SELECT distinct product_name, product_pics,product_link,count(product_name) from category where product_code ='$query' group by product_name order by product_name ASC";
+            else if($popular)
+                $query1 = "SELECT distinct product_name, product_pics,product_link,count(product_name) from category where product_code ='$query' group by product_name order by count(product_name) DESC";
             
             	
             $result1= mysql_query($query1);
@@ -135,32 +138,30 @@
             //$r=mysql_fetch_array($result1); 
             $array0=array();
             for($i=0;$i<$rows1;$i++){
-            	$array1=array();//제품이름,이미지
-				$array2=array();//등장횟수
-				$array3=array();//등장타이틀, 등장링크 총
-				$array4=array();//등장타이틀,등장링크 갯수
-				$array5=array();//등장타이틀,등장링크
+            	$array1=array();//제품이름,이미지,제품링크,등장횟수
+				$array2=array();//등장타이틀, 등장링크 총
+				$array3=array();//등장타이틀,등장링크 갯수
+				$array4=array();//등장타이틀,등장링크
             	$product_name = mysql_result($result1, $i, 'product_name'); 
             	$product_pics = mysql_result($result1, $i, 'product_pics');
-            	array_push($array1,array($product_name,$product_pics));
-            	$query2 = "SELECT count(product_name) from category where product_name='$product_name'";
-		    	$result2 = mysql_query($query2);
-		    	$temp3 = mysql_result($result2, 0);
-		    	$count=$temp3;
-		    	array_push($array2,$count);
-		    	$query3 = "SELECT title,link from category where product_name='$product_name'";
+                $product_link = mysql_result($result1, $i, 'product_link');
+            	$product_count = mysql_result($result1, $i, 'count(product_name)');
+                array_push($array1,array($product_name,$product_pics,$product_link,$product_count));
+            	
+		    	$query3 = "SELECT title,link,date from category where product_name='$product_name'";
 			    $result3 = mysql_query($query3);
 			    $rows2 = mysql_num_rows($result3);
 			    for($j=0;$j<$rows2;$j++){
 			    	$videoname = mysql_result($result3, $j, 'title');
 				    $videolink = mysql_result($result3, $j, 'link');
+                    $videodate = mysql_result($result3, $j, 'date');
 				    $videoname = $videoname;
 			    	$videolink = $videolink;
-				    array_push($array5,array($videoname,$videolink));	
+				    array_push($array4,array($videoname,$videolink,$videodate));	
 			    }
-			    array_push($array4,$array5);
 			    array_push($array3,$array4);
-				array_push($array0,array($array1,$array2,$array3));
+			    array_push($array2,$array3);
+				array_push($array0,array($array1,$array2));
 
             }
             //return $rows;
@@ -191,7 +192,7 @@
             	else if($_GET["order"]=="order")
             		$order = true;
             }
-            $query1 = "SELECT * from video where 1";
+            $query1 = "SELECT * from video where 1 order by date DESC";
             if($latest)
             	$query1 = "SELECT * from video where 1 order by date DESC";
             else if($order)
