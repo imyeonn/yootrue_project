@@ -105,7 +105,7 @@
 				        $query=$_GET['query'];
 				        $position = 0;
 			      		if ($query==""){
-			      			print "찾는 제품이 없습니다.";
+			      			print "";
 			      		}
 			      		else{
 				        //var_dump($arrays);
